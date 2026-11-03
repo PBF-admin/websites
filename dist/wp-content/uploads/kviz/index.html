@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Složi svoj PBF smoothie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/assets/confetti.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Screen -->
+        <div id="intro" class="screen active">
+            <div class="intro-content">
+                <div class="logo-section">
+                    <div class="smoothie-icon">🥤</div>
+                </div>
+                <h1>Složi svoj PBF smoothie</h1>
+                <h2>Prehrambeno-biotehnološki fakultet</h2>
+                <p class="intro-description">
+                    Odaberi sastojke za svoj savršeni smoothie i saznaj koji studij na Prehrambeno-biotehnološkom fakultetu najbolje odgovara tvojoj osobnosti!
+                </p>
+                <button class="btn btn--primary btn--lg start-btn" onclick="startQuiz()">
+                    <span>🌟</span> Počni kviz
+                </button>
+                <p class="university-info">Sveučilište u Zagrebu</p>
+            </div>
+        </div>
+
+        <!-- Step 1: Baza -->
+        <div id="step1" class="screen">
+            <div class="progress-bar">
+                <div class="progress-step active">1</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">2</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">3</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">4</div>
+            </div>
+
+            <div class="step-content">
+                <h2>🥛 Odaberi bazu smoothija</h2>
+                <p class="step-description">Svaki smoothie treba dobru osnovu. Koja te najviše privlači?</p>
+
+                <div class="options-grid">
+                    <div class="option-card" data-value="jogurt" onclick="selectOption('baza', 'jogurt')">
+                        <div class="option-emoji">🥛</div>
+                        <div class="option-title">Jogurt</div>
+                        <div class="option-desc">Fermentirana baza bogata probioticima</div>
+                    </div>
+
+                    <div class="option-card" data-value="sok" onclick="selectOption('baza', 'sok')">
+                        <div class="option-emoji">🧃</div>
+                        <div class="option-title">100% voćni sok</div>
+                        <div class="option-desc">Osvježavajuća baza puna vitamina C</div>
+                    </div>
+
+                    <div class="option-card" data-value="biljni" onclick="selectOption('baza', 'biljni')">
+                        <div class="option-emoji">🌱</div>
+                        <div class="option-title">Obogaćeni biljni napitak</div>
+                        <div class="option-desc">Alternativa za one koji traže biljne proteine</div>
+                    </div>
+
+                    <div class="option-card" data-value="mlijeko" onclick="selectOption('baza', 'mlijeko')">
+                        <div class="option-emoji">🐄</div>
+                        <div class="option-title">Mlijeko</div>
+                        <div class="option-desc">Klasična baza s proteinima i kalcijem</div>
+                    </div>
+                </div>
+
+                <button id="next1" class="btn btn--primary btn--lg" onclick="goToStep2()" disabled>
+                    Dalje →
+                </button>
+            </div>
+        </div>
+
+        <!-- Step 2: Glavni sastojak -->
+        <div id="step2" class="screen">
+            <div class="progress-bar">
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step active">2</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">3</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">4</div>
+            </div>
+
+            <div class="step-content">
+                <h2>🍌 Odaberi glavni sastojak</h2>
+                <p class="step-description">Koji glavni sastojak će dati tvom smoothieju karakterističan okus?</p>
+
+                <div class="options-grid">
+                    <div class="option-card" data-value="banana" onclick="selectOption('sastojak', 'banana')">
+                        <div class="option-emoji">🍌</div>
+                        <div class="option-title">Banana</div>
+                        <div class="option-desc">Daje slatkoću i gustoću smoothieju</div>
+                    </div>
+
+                    <div class="option-card" data-value="spinat" onclick="selectOption('sastojak', 'spinat')">
+                        <div class="option-emoji">🥬</div>
+                        <div class="option-title">Špinat</div>
+                        <div class="option-desc">Zeleno blago s puno željeza i vlakana</div>
+                    </div>
+
+                    <div class="option-card" data-value="borovnica" onclick="selectOption('sastojak', 'borovnica')">
+                        <div class="option-emoji">🫐</div>
+                        <div class="option-title">Borovnica</div>
+                        <div class="option-desc">Izvor prirodnih antocijana i antioksidansa</div>
+                    </div>
+                </div>
+
+                <button id="next2" class="btn btn--primary btn--lg" onclick="goToStep3()" disabled>
+                    Dalje →
+                </button>
+            </div>
+        </div>
+
+        <!-- Step 3: Poseban dodatak -->
+        <div id="step3" class="screen">
+            <div class="progress-bar">
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step active">3</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">4</div>
+            </div>
+
+            <div class="step-content">
+                <h2>✨ Odaberi poseban dodatak</h2>
+                <p class="step-description">Koji poseban dodatak će učiniti tvoj smoothie jedinstvenim?</p>
+
+                <div class="options-grid">
+                    <div class="option-card" data-value="chia" onclick="selectOption('dodatak', 'chia')">
+                        <div class="option-emoji">🌱</div>
+                        <div class="option-title">Chia</div>
+                        <div class="option-desc">Izvor omega-3 masnih kiselina i vlakana</div>
+                    </div>
+
+                    <div class="option-card" data-value="spirulina" onclick="selectOption('dodatak', 'spirulina')">
+                        <div class="option-emoji">🌊</div>
+                        <div class="option-title">Spirulina</div>
+                        <div class="option-desc">Mikroalga prepuna proteina i pigmenata</div>
+                    </div>
+
+                    <div class="option-card" data-value="med" onclick="selectOption('dodatak', 'med')">
+                        <div class="option-emoji">🍯</div>
+                        <div class="option-title">Med</div>
+                        <div class="option-desc">Prirodni zaslađivač i antimikrobno sredstvo</div>
+                    </div>
+
+                    <div class="option-card" data-value="kakao" onclick="selectOption('dodatak', 'kakao')">
+                        <div class="option-emoji">🍫</div>
+                        <div class="option-title">Kakao</div>
+                        <div class="option-desc">Daje aromu i energiju</div>
+                    </div>
+                </div>
+
+                <button id="next3" class="btn btn--primary btn--lg" onclick="showResults()" disabled>
+                    Otkrij rezultat! 🎉
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results" class="screen">
+            <div class="progress-bar">
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step completed">✓</div>
+                <div class="progress-line completed"></div>
+                <div class="progress-step completed">🎉</div>
+            </div>
+
+            <div class="results-content">
+                <div class="smoothie-preview">
+                    <div class="smoothie-visual">
+                        <span id="smoothie-base-emoji">🥛</span>
+                        +
+                        <span id="smoothie-ingredient-emoji">🍌</span>
+                        +
+                        <span id="smoothie-addon-emoji">🌱</span>
+                        =
+                        <span class="smoothie-glass">🥤</span>
+                    </div>
+                </div>
+
+                <div class="study-result">
+                    <h2 id="study-name">Prehrambene tehnologije</h2>
+                    <p id="study-description">
+                        Studij koji te priprema za rad u prehrambenoj industriji. Učit ćeš o procesiranju hrane, kontroli kvalitete i razvoju novih proizvoda.
+                    </p>
+
+                    <!-- Dodatne informacije o studiju -->
+                    <div class="study-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">⏱️</span>
+                            <span><strong>Trajanje:</strong> <span id="duration-text">3 godine</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📚</span>
+                            <span><strong>ECTS bodovi:</strong> <span id="ects-text">180 ECTS</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span><strong>Lokacija:</strong> <span id="location-text">Zagreb</span></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎓</span>
+                            <span><strong>Tip studija:</strong> <span id="study-type-text">Preddiplomski</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn--primary btn--lg" onclick="restartQuiz()">
+                        🔄 Pokušaj ponovo
+                    </button>
+                    <a id="study-web-link" href="https://www.pbf.unizg.hr" target="_blank" class="btn btn--outline btn--lg">
+                        🔗 Saznaj više o studiju
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+<script src="/assets/quiz-accessibility.js" defer></script></body>
+</html>

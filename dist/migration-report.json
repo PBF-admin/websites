@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "title": "Dobar dan, svijete!",
+      "route": "/dan-svijete/",
+      "type": "post"
+    },
+    {
+      "id": 2,
+      "title": "O nama",
+      "route": "/primjer-stranice/",
+      "type": "page"
+    },
+    {
+      "id": 7,
+      "title": "Naslovnica",
+      "route": "/",
+      "type": "page"
+    },
+    {
+      "id": 71,
+      "title": "Studiji",
+      "route": "/zajednicki-predmeti/",
+      "type": "page"
+    },
+    {
+      "id": 74,
+      "title": "Prehrambena tehnolgija",
+      "route": "/prehrambena-biotehnolgija/",
+      "type": "page"
+    },
+    {
+      "id": 78,
+      "title": "Biotehnologija",
+      "route": "/biotehnologija/",
+      "type": "page"
+    },
+    {
+      "id": 113,
+      "title": "Nutricionizam",
+      "route": "/nutricionizam/",
+      "type": "page"
+    },
+    {
+      "id": 223,
+      "title": "Smotre",
+      "route": "/prijasnje-godine/",
+      "type": "page"
+    },
+    {
+      "id": 330,
+      "title": "Studentski život",
+      "route": "/studentski-zivot/",
+      "type": "page"
+    }
+  ],
+  "assets": 1017,
+  "missingAssets": [],
+  "warnings": [],
+  "notes": [
+    "Only published pages and posts, referenced accordion content and public media are exported.",
+    "The original header and homepage slide are preserved. The home illustration now also links to the three studies.",
+    "The original Google Fonts are served locally with their OFL licenses.",
+    "YouTube and Google Maps still require internet access; video questions are also available without playback.",
+    "H5P calorimetry is reimplemented with vanilla JS: timed text, paused multiple-choice questions and a final summary.",
+    "WordPress administration, user records, comments, analytics and PHP code are not published."
+  ]
+}
