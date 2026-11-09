@@ -45,7 +45,7 @@
     {
       "id": 223,
       "title": "Smotre",
-      "route": "/prijasnje-godine/",
+      "route": "/smotre/",
       "type": "page"
     },
     {
@@ -55,7 +55,7 @@
       "type": "page"
     }
   ],
-  "assets": 1017,
+  "assets": 1027,
   "missingAssets": [],
   "warnings": [],
   "notes": [

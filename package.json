@@ -1,0 +1,16 @@
+{
+  "name": "smotra-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static reconstruction of the SMOTRA PBF WordPress export",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

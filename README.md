@@ -29,7 +29,7 @@ Tests cover the database reader, UTF-8 serialized settings, page coverage, local
 ## What is preserved
 
 - All eight published pages and the original published blog post, with their original Croatian content.
-- The Avada header banner, homepage illustration, menu order, social links, colors, and original Google Fonts, served locally with their OFL licenses.
+- The Avada header banner, homepage illustration, menu order, social links, and a refreshed responsive visual system. Original fonts are retained locally with their OFL licenses.
 - The original page slugs and additional `/o-nama/`, `/studiji/`, `/prehrambena-tehnologija/`, and `/smotre/` aliases.
 - Legacy `/?page_id=…` and `/?p=…` links, which redirect in the browser to the appropriate static page.
 - Galleries and captions, with a keyboard-accessible photo viewer.
