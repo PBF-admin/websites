@@ -176,6 +176,34 @@ function smotra2026() {
   </section>`;
 }
 
+function smotra2026Gallery() {
+  const photos = [
+    'IMG-20261111-WA0026.jpg',
+    'IMG-20261111-WA0032.jpg',
+    'IMG-20261111-WA0040.jpg',
+    'IMG-20261113-WA0071.jpg',
+    'IMG-20261113-WA0075.jpg',
+    'IMG-20261113-WA0095.jpg',
+    'IMG-20261113-WA0113.jpg',
+    '20261114_151551.jpg',
+    '20261114_170809.jpg',
+    '20261114_173701.jpg',
+    '20261114_181443.jpg',
+    '20261114_182006.jpg',
+    '20261114_182022.jpg'
+  ];
+  return `<section class="smotra-photo-gallery" aria-labelledby="smotra-2026-gallery-title">
+    <h2 id="smotra-2026-gallery-title">Smotra 2026. u fotografijama</h2>
+    <div class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">${
+      photos.map((photo, index) => {
+        const src = asset(`2026/12/${photo}`);
+        const alt = `Fotografija ${index + 1} s 31. Smotre Sveučilišta u Zagrebu.`;
+        return `<li class="blocks-gallery-item"><figure><a href="${src}" data-lightbox><img src="${src}" alt="${escaped(alt)}" loading="lazy" decoding="async"></a><figcaption>Fotografija ${index + 1}</figcaption></figure></li>`;
+      }).join('')
+    }</ul></div>
+  </section>`;
+}
+
 function interactiveVideo(id) {
   const record = database.wp_h5p_contents.find(row => row.id === Number(id));
   if (!record) throw new Error(`Missing interactive content ${id}`);
@@ -326,7 +354,7 @@ for (const page of pages) {
   const isHome = page.ID === home;
   const body = isHome
     ? `<section class="home-hero" aria-label="Studiji Prehrambeno-biotehnološkog fakulteta"><img src="${hero}" width="1904" height="907" alt="Prehrambeno-biotehnološki fakultet: Studij Nutricionizma, Studij Biotehnologije i Studij Prehrambene tehnologije" fetchpriority="high"><div class="hero-study-links"><a href="${routes[113]}">Studij Nutricionizma</a><a href="${routes[78]}">Studij Biotehnologije</a><a href="${routes[74]}">Studij Prehrambene tehnologije</a></div></section>`
-    : `${page.ID === 223 ? smotra2026() : ''}${content(page.post_content)}`;
+    : `${page.ID === 223 ? `${smotra2026()}${smotra2026Gallery()}` : ''}${content(page.post_content)}`;
   const html = shell(page, body, isHome);
   save(isHome ? 'index.html' : `${routes[page.ID].slice(1)}index.html`, html);
   if (isHome) save(`${page.post_name}/index.html`, html);

@@ -92,6 +92,16 @@ test('all nine archive accordions and their original titles are rendered nativel
   const html = read('dist/smotre/index.html');
   assert.equal([...html.matchAll(/<section class="accordion"/g)].length, 9);
   assert.ok(html.indexOf('31. Smotra Sveučilišta u Zagrebu') < html.indexOf('<strong>2025</strong>'));
+  assert.ok(html.indexOf('Smotra 2026. u fotografijama') < html.indexOf('<strong>2025</strong>'));
+  const gallery = html.match(/<section class="smotra-photo-gallery"[\s\S]*?<\/section>/)?.[0];
+  assert.ok(gallery, 'Missing the 2026 photo gallery');
+  assert.equal([...gallery.matchAll(/data-lightbox/g)].length, 13);
+  for (const photo of [
+    'IMG-20261111-WA0026.jpg', 'IMG-20261111-WA0032.jpg', 'IMG-20261111-WA0040.jpg',
+    'IMG-20261113-WA0071.jpg', 'IMG-20261113-WA0075.jpg', 'IMG-20261113-WA0095.jpg',
+    'IMG-20261113-WA0113.jpg', '20261114_151551.jpg', '20261114_170809.jpg',
+    '20261114_173701.jpg', '20261114_181443.jpg', '20261114_182006.jpg', '20261114_182022.jpg'
+  ]) assert.ok(gallery.includes(`/wp-content/uploads/2026/12/${photo}`), `Missing 2026 photo: ${photo}`);
   for (const image of [
     'pbf-zemlji-cudesa.png', 'otkrij-svoj-pbf-smjer.png', 'spoji-niz.jpeg',
     'bomboni.png', 'mikroinkapsulacija.png', 'porcija.png', 'mikroorganizmi.jpeg',
