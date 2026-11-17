@@ -192,15 +192,16 @@ function smotra2026Gallery() {
     '20261114_182006.jpg',
     '20261114_182022.jpg'
   ];
-  return `<section class="smotra-photo-gallery" aria-labelledby="smotra-2026-gallery-title">
-    <h2 id="smotra-2026-gallery-title">Smotra 2026. u fotografijama</h2>
-    <div class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">${
+  return `<section class="accordion" aria-label="Smotra 2026.">
+    <details name="accordion-2026"><summary>Pogledaj slike sa SMOTRE 2026</summary><div class="accordion-content">
+      <div class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">${
       photos.map((photo, index) => {
         const src = asset(`2026/12/${photo}`);
         const alt = `Fotografija ${index + 1} s 31. Smotre Sveučilišta u Zagrebu.`;
         return `<li class="blocks-gallery-item"><figure><a href="${src}" data-lightbox><img src="${src}" alt="${escaped(alt)}" loading="lazy" decoding="async"></a><figcaption>Fotografija ${index + 1}</figcaption></figure></li>`;
       }).join('')
-    }</ul></div>
+      }</ul></div>
+    </div></details>
   </section>`;
 }
 

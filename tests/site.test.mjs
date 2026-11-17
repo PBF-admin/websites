@@ -88,13 +88,14 @@ test('legacy query links, hashes and friendly aliases are preserved', () => {
   assert.equal(redirected, '/smotre/#program');
 });
 
-test('all nine archive accordions and their original titles are rendered natively', () => {
+test('archive accordions and their original titles are rendered natively', () => {
   const html = read('dist/smotre/index.html');
-  assert.equal([...html.matchAll(/<section class="accordion"/g)].length, 9);
+  assert.equal([...html.matchAll(/<section class="accordion"/g)].length, 10);
   assert.ok(html.indexOf('31. Smotra Sveučilišta u Zagrebu') < html.indexOf('<strong>2025</strong>'));
-  assert.ok(html.indexOf('Smotra 2026. u fotografijama') < html.indexOf('<strong>2025</strong>'));
-  const gallery = html.match(/<section class="smotra-photo-gallery"[\s\S]*?<\/section>/)?.[0];
-  assert.ok(gallery, 'Missing the 2026 photo gallery');
+  const gallery = html.match(/<details name="accordion-2026">([\s\S]*?)<\/details>/)?.[1];
+  assert.ok(gallery, 'Missing the 2026 photo gallery accordion');
+  assert.ok(gallery.includes('<summary>Pogledaj slike sa SMOTRE 2026</summary>'));
+  assert.ok(!html.match(/<details name="accordion-2026" open>/), 'The 2026 photo gallery should be closed initially');
   assert.equal([...gallery.matchAll(/data-lightbox/g)].length, 13);
   for (const photo of [
     'IMG-20261111-WA0026.jpg', 'IMG-20261111-WA0032.jpg', 'IMG-20261111-WA0040.jpg',
