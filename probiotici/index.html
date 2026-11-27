@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="POST-BIO istraživački projekt Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu.">
+  <title>POST-BIO | Probiotici, postbiotici i nova vrijednost</title>
+  <style>
+    :root{--ink:#123b39;--deep:#103f3b;--green:#256c5d;--lime:#d8e9b5;--paper:#f6f7f0;--muted:#5e7470;--line:#d6e2d9;--white:#fff;--orange:#d88357}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #e19a6f;outline-offset:3px}img{max-width:100%;height:auto}.wrap{width:min(1200px,calc(100% - 3rem));margin:auto}.skip{position:absolute;top:-5rem;left:1rem;background:white;padding:.7rem;z-index:10}.skip:focus{top:1rem}
+    .topbar{background:#fff;border-bottom:1px solid #edf1ec}.topbar .wrap{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:2rem}.brand{text-decoration:none;display:flex;align-items:center;gap:.8rem;font-weight:800;letter-spacing:.05em}.brand-mark{display:grid;place-items:center;width:42px;height:42px;background:var(--deep);color:var(--lime);border-radius:50%;font-size:1.25rem}.brand small{display:block;color:var(--muted);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase}.logos{width:242px}.nav{background:#fff;border-bottom:1px solid var(--line)}.nav .wrap{display:flex;align-items:center;gap:2rem;min-height:56px}.nav a{text-decoration:none;font-size:.81rem;font-weight:700;color:#345a54}.nav a:hover{color:#bb633e}.nav .nav-end{margin-left:auto;color:var(--green)}.menu{display:none}
+    .hero{position:relative;overflow:hidden;background:var(--deep);color:#fff}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 34%,#427e6b 0,transparent 35%),linear-gradient(115deg,transparent 52%,#225a50 100%);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;min-height:570px;gap:2rem}.eyebrow{display:flex;align-items:center;gap:.7rem;text-transform:uppercase;letter-spacing:.17em;font-size:.7rem;font-weight:800;color:#b8d7b6}.eyebrow:before{content:"";width:30px;height:1px;background:currentColor}h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-size:clamp(3.2rem,6.3vw,6.2rem);line-height:1.01;letter-spacing:-.045em;margin:1.5rem 0}h1 em{color:var(--lime);font-weight:400}.hero-copy{max-width:620px;font-size:1.08rem;color:#d4e5dc;line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.button{display:inline-flex;align-items:center;justify-content:center;gap:1.4rem;padding:.9rem 1.15rem;border:1px solid #a3c5b1;text-decoration:none;font-size:.8rem;font-weight:700;border-radius:4px}.button.primary{background:var(--lime);border-color:var(--lime);color:var(--deep)}.button:hover{background:#fff;color:var(--deep)}.hero-art{position:relative;display:grid;place-items:center;min-height:450px}.hero-art svg{width:min(100%,520px);overflow:visible}.art-label{position:absolute;right:4%;bottom:9%;font-size:.69rem;letter-spacing:.15em;text-transform:uppercase;color:#b9d1c1}.hero-bottom{position:relative;border-top:1px solid #ffffff2c}.hero-bottom .wrap{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;color:#c8dfd1;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+    .section{padding:6.5rem 0}.section.white{background:#fff}.section.alt{background:#eaf1e6}.section-head{display:grid;grid-template-columns:1fr 1.5fr;gap:3rem;margin-bottom:3rem}.section-number{color:var(--green);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:bold}.section h2{font-size:clamp(2.5rem,4vw,4rem);line-height:1.08;letter-spacing:-.035em;margin:.6rem 0 0}.lead{font-size:1.15rem;line-height:1.7;color:#496962;max-width:700px}.project-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:2rem}.project-card{background:var(--deep);color:#fff;padding:2.5rem;border-radius:8px}.project-card .eyebrow{color:var(--lime)}.project-card h3{font:400 clamp(1.7rem,3vw,2.4rem)/1.2 Georgia,serif;margin:1.4rem 0}.project-card p{color:#c6ddd1}.project-facts{background:#f2f6ee;border:1px solid var(--line);border-radius:8px;padding:1rem 2rem}.fact{padding:1rem 0;border-bottom:1px solid var(--line)}.fact:last-child{border:0}.fact span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.11em;font-weight:700}.fact strong{font-size:.96rem}.project-history{margin-top:1.5rem;color:var(--muted);font-size:.9rem}
+    .team-intro{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2rem}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}.person{background:white;padding:1.5rem;min-height:150px}.person .initial{color:#87aa91;font:italic 1.1rem Georgia,serif}.person h3{font-size:1rem;margin:.75rem 0 .25rem}.person p{font-size:.78rem;color:var(--muted);margin:0;line-height:1.5}
+    .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.research-link{display:flex;flex-direction:column;justify-content:space-between;min-height:200px;padding:1.6rem;background:white;border:1px solid var(--line);border-radius:7px;text-decoration:none;transition:transform .2s,border-color .2s}.research-link:hover{transform:translateY(-4px);border-color:var(--green)}.research-link .index{font-size:.7rem;color:#88a797;letter-spacing:.1em}.research-link strong{font:400 1.45rem/1.2 Georgia,serif}.research-link .arrow{color:var(--green);font-size:1.3rem}.content-block{padding:3rem 0;border-top:1px solid var(--line)}.content-block:first-of-type{border-top:0}.content-block h3{font:400 clamp(1.7rem,3vw,2.4rem)/1.2 Georgia,serif;margin-bottom:1rem}.content-block>p{max-width:900px;color:#4b6861}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff;margin:1rem 0 1.5rem}table{width:100%;border-collapse:collapse;font-size:.84rem;text-align:left}th,td{padding:.8rem 1rem;border-bottom:1px solid #e4ece5;vertical-align:top}th{background:#e6efe5;color:#365c50;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#f8faf5}caption{text-align:left;padding:1rem;font-weight:700;color:var(--ink)}.table-note{font-size:.8rem;color:var(--muted)}.search-label{display:block;font-size:.8rem;font-weight:bold;margin:1rem 0 .35rem}.search{width:min(100%,360px);padding:.8rem;border:1px solid #aec5b3;border-radius:4px;background:white;color:var(--ink);font:inherit}.search-status{font-size:.8rem;color:var(--muted);margin:.4rem 0}
+    details.archive{margin:1rem 0;border:1px solid var(--line);background:#fff;border-radius:6px}details.archive>summary{cursor:pointer;padding:1rem 1.2rem;font-weight:700;font-size:.9rem;color:var(--green)}.archive-content{padding:0 1.2rem 1.2rem;overflow-wrap:anywhere;font-size:.9rem;color:#45645d}.archive-content table{display:block;overflow-x:auto}.archive-content li{margin-bottom:.8rem}.archive-content a{color:var(--green)}.archive-content img{max-width:100%}.archive-content p{margin-bottom:1rem}.list{padding:0;list-style:none;counter-reset:entry}.list li{position:relative;padding:1.2rem 0 1.2rem 3rem;border-top:1px solid var(--line);color:#365b52;font-size:.92rem}.list li:before{counter-increment:entry;content:counter(entry,decimal-leading-zero);position:absolute;left:0;top:1.3rem;color:#86a694;font-size:.72rem;font-weight:bold}.list a{color:var(--green);font-weight:bold}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.footer{background:#0d3432;color:#d5e6da;padding:3rem 0}.footer .wrap{display:flex;justify-content:space-between;gap:2rem}.footer strong{font-size:1.2rem;letter-spacing:.05em}.footer p{font-size:.8rem;color:#a6c4b5;margin:.4rem 0}.footer a{color:#d8e9b5}
+    @media(max-width:850px){.hero-grid,.section-head,.project-grid{grid-template-columns:1fr}.hero-grid{padding:4rem 0 2rem}.hero-art{min-height:300px}.hero-art svg{max-width:380px}.team-grid{grid-template-columns:repeat(2,1fr)}.research-grid{grid-template-columns:repeat(2,1fr)}.section{padding:4.5rem 0}.section-head{gap:1rem}.nav .wrap{gap:1rem;flex-wrap:wrap;padding:.8rem 0}.nav .nav-end{margin-left:0}}
+    @media(max-width:560px){.wrap{width:min(100% - 2rem,1200px)}.topbar .wrap{min-height:72px}.logos{width:155px}.brand{font-size:.9rem}.brand-mark{width:34px;height:34px}.brand small{font-size:.55rem}.nav .wrap{gap:.7rem 1.1rem}.nav a{font-size:.72rem}.hero-grid{padding-top:3rem}.hero-art{min-height:245px}.hero-art svg{max-width:290px}.hero-bottom .wrap{flex-direction:column}.section{padding:3.5rem 0}.team-intro,.footer .wrap{display:block}.team-grid,.research-grid,.two-col{grid-template-columns:1fr}.person{min-height:0}.research-link{min-height:150px}.project-card{padding:1.6rem}.project-facts{padding:.5rem 1.3rem}th,td{padding:.65rem;min-width:100px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.research-link{transition:none}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+<header>
+  <div class="topbar"><div class="wrap"><a class="brand" href="#pocetna"><span class="brand-mark">✳</span><span>POST-BIO<small>Istraživački projekt</small></span></a><img class="logos" src="stari_site_files/naslovni_logo.png" alt="Hrvatska zaklada za znanost i Prehrambeno-biotehnološki fakultet Sveučilišta u Zagrebu"></div></div>
+  <nav class="nav" aria-label="Glavna navigacija"><div class="wrap"><a href="#projekt">O projektu</a><a href="#tim">Projektni tim</a><a href="#istrazivanje">Istraživanje</a><a href="#radovi">Znanstveni radovi</a><a href="#dogadanja">Događanja</a><a class="nav-end" href="#baze">Istraži baze podataka ↗</a></div></nav>
+</header>
+<main id="sadrzaj">
+  <section class="hero" id="pocetna"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Znanost o dobrim mikroorganizmima</div><h1>Mali svijet.<br><em>Veliki potencijal.</em></h1><p class="hero-copy">Istražujemo probiotike i postbiotike te mogućnosti stvaranja vrijednih bioaktivnih metabolita iz nusproizvoda mliječne industrije.</p><div class="actions"><a class="button primary" href="#projekt">Upoznajte projekt <span>↗</span></a><a class="button" href="#istrazivanje">Naša istraživanja <span>↓</span></a></div></div>
+    <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 500 500" fill="none"><circle cx="250" cy="250" r="205" stroke="#9CC8AA" stroke-opacity=".23"/><circle cx="250" cy="250" r="166" fill="#D9E9B8" fill-opacity=".08" stroke="#BBDCB7" stroke-opacity=".3"/><circle cx="250" cy="250" r="122" fill="#D9E9B8" fill-opacity=".06"/><g stroke="#D8E9B5" stroke-width="2" opacity=".8"><path d="M92 264c56-30 94-59 155-55s104 42 160 17"/><path d="M129 337c54-39 99-50 150-39s78 18 105-5"/><path d="M152 159c46 29 90 38 138 23s66-23 95-9" opacity=".5"/></g><g fill="#D8E9B5"><rect x="163" y="130" width="70" height="28" rx="14" transform="rotate(32 163 130)" opacity=".9"/><rect x="273" y="244" width="86" height="32" rx="16" transform="rotate(-30 273 244)"/><rect x="145" y="291" width="73" height="28" rx="14" transform="rotate(-32 145 291)" opacity=".8"/><rect x="276" y="117" width="55" height="22" rx="11" transform="rotate(47 276 117)" opacity=".65"/></g><g fill="#D88357"><circle cx="226" cy="237" r="13"/><circle cx="335" cy="323" r="10"/><circle cx="176" cy="230" r="7"/><circle cx="280" cy="360" r="6"/></g><g fill="#B8D7B6"><circle cx="123" cy="185" r="5"/><circle cx="365" cy="203" r="6"/><circle cx="236" cy="318" r="5"/><circle cx="340" cy="150" r="5"/></g><circle cx="250" cy="250" r="225" stroke="#9CC8AA" stroke-opacity=".12" stroke-dasharray="3 12"/></svg><span class="art-label">Mikrobiologija · Biotehnologija · Održivost</span></div>
+  </div><div class="hero-bottom"><div class="wrap"><span>IP-2024-05-6548 &nbsp; / &nbsp; POST-BIO</span><span>Prehrambeno-biotehnološki fakultet &nbsp; · &nbsp; Zagreb</span></div></div></section>
+  <section class="section white" id="projekt"><div class="wrap"><div class="section-head"><div><div class="section-number">01 / O projektu</div><h2>Od istraživanja<br>do nove vrijednosti.</h2></div><p class="lead">Povezujemo znanje o korisnim mikroorganizmima, bioaktivnim metabolitima i nusproizvodima mliječne industrije u istraživanju novih biotehnoloških mogućnosti.</p></div><div class="project-grid"><div class="project-card"><div class="eyebrow">Istraživački projekt · POST-BIO</div><h3>Specifični bioaktivni metaboliti postbiotika i probiotika proizvedeni primjenom nusproizvoda mliječne industrije</h3><p>Projekt se provodi na Prehrambeno-biotehnološkom fakultetu Sveučilišta u Zagrebu uz financiranje Hrvatske zaklade za znanost.</p><a class="button" href="#baze">Pogledajte rezultate ↗</a></div><div class="project-facts"><div class="fact"><span>Šifra projekta</span><strong>IP-2024-05-6548</strong></div><div class="fact"><span>Trajanje</span><strong>09. 12. 2024. – 08. 12. 2027.</strong></div><div class="fact"><span>Voditeljica projekta</span><strong>prof. dr. sc. Blaženka Kos</strong></div><div class="fact"><span>Ustanova</span><strong>Sveučilište u Zagrebu Prehrambeno-biotehnološki fakultet</strong></div><div class="fact"><span>Financiranje</span><strong>Hrvatska zaklada za znanost</strong></div></div></div><p class="project-history">Prethodni projekti: <strong>PRO-BIO 2.0</strong> (2019. – 2023.) i <strong>Pro-S</strong> (2015. – 2019.).</p><details class="archive"><summary>Više o projektu i prethodnim istraživanjima</summary><div class="archive-content">
+		<p><strong>Sažetak projekta “Specifični bioaktivni metaboliti postbiotika i probiotika proizvedeni primjenom nusproizvoda mliječne industrije” (09.12.2024.– 08.12.2027.)</strong></p>
+<p style="text-align: justify;">Postbiotici, kao jedan od novijih znanstvenih pristupa unutar probiotičkog koncepta, za razliku od probiotika, sadrže inaktivirane mikrobne stanice i njihove bioaktivne metabolite, sa zadržanim probiotičkim svojstvima. Stoga će se provesti optimiranje procesnih parametara proizvodnje postbiotika primjenom inovativne procesne tehnologije pulsirajućeg električnog polja, termičke obrade i lizozima. Za proizvodnju postbiotika bit će odabrani autohtoni sojevi bakterija mliječne kiseline (BMK) izolirani iz majčinog mlijeka i tradicionalno proizvedenih fermentiranih proizvoda, sa specifičnim svojstvom proizvodnje potencijalnih bioaktivnih metabolita: S-proteina, egzopolisaharida, bakteriocina i bioaktivnih peptida, sa svojim proteolitičkim enzimima. Bit će razvijeni novi funkcionalni proizvodi s postbioticima i probioticima, uz iskorištavanje nusproizvoda mliječne industrije kao što su permeat mlijeka i sirutka, za njihov uzgoj, inkapsulaciju i proizvodnju suhih bioaktivnih pripravaka. Provest će se usporedba funkcionalnih svojstava postbiotika i probiotika in vitro istraživanjima njihove antimikrobne, antioksidativne i proteolitičke aktivnosti, kao i ex vivo eksperimentima imunomodulacijskog djelovanja, adhezijskih svojstava i kompetitivne ekskluzije potencijalnih patogena na humanim staničnim linijama. Bit će također ispitani njihovi in vivo učinci na crijevnu mikrobiotu, imunost i metabolizam miševa s izazvanim dijabetesom. Stoga će istraživanja funkcionalnih učinaka živih i inaktiviranih mikrobnih stanica BMK i njihovih potencijalnih bioaktivnih metabolita doprinijeti razvoju novih pripravaka postbiotika i probiotika, u tekućoj i praškastoj inkapsuliranoj formi, uz prednost ekonomičnije proizvodnje korištenjem nusproizvoda mliječne industrije i veće stabilnosti postbiotika u odnosu na probiotike koji moraju sadržavati velik broj živih mikrobnih stanica.</p>
+<p style="text-align: justify;">
+<p style="text-align: justify;"><strong>Sažetak projekta „Potencijalne terapijske biomolekule druge generacije probiotika“ (10.12.2019. &#8211; 09.12.2023.):</strong></p>
+<p style="text-align: justify;">Najnovija istraživanja druge generacije probiotika usmjerena su na njihovu terapijsku primjenu kao „živih lijekova”, nazvanih od strane US FDA „živi bioterapijski pripravci“. Naime, promjene u sastavu crijevne mikrobiote su ustanovljene kod različitih metaboličkih poremećaja i bolesti, a ključnu ulogu u uspostavljanju ravnoteže crijevne mikrobiote imaju prvi dani života, pri čemu mikrobiota majčinog mlijeka značajno utječe na sastav crijevne mikrobiote dojenčeta. Stoga je glavni cilj istraživanja odabir i funkcionalna karakterizacija probiotičkih sojeva bakterija mliječne kiseline (BMK), izoliranih iz uzoraka majčinog mlijeka, a koje proizvode molekule s potencijalnim terapijskim djelovanjem, egzopolisaharide (EPS) i površinske S-proteine, što je svojstvo samo rijetkih sojeva BMK. Bit će provedena komparativna  analiza sekvencioniranih genoma odabranih sojeva BMK te izolacija, purifikacija i karakterizacija potencijalnih terapijskih biomolekula, primjenom LC/MS, MALDI-TOF i NMR analiza. Potencijal odabranih probiotičkih sojeva BMK, i njihovih specifičnih biomolekula, u adheziji, kolonizaciji, kompetitivnoj ekskluziji patogena, imunomodulaciji, regeneraciji sluznice crijeva i utjecaju na sastav mikrobiote u gastrointestinalnom traktu (GIT-u) će biti istražen na in vitro, ex vivo i in vivo eksperimentalnim modelima simuliranog GIT-a, Caco-2 crijevnih epitelnih stanica, primarne stanične kulture humanih kolonocita s izazvanim upalnim procesom i eksperimentalnih miševa kojima će biti izazvana upalna bolest crijeva. Okarakterizirani probiotički sojevi BMK i njihove izolirane i purificirane funkcionalne biomolekule s potencijalnim terapijskim djelovanjem, biti proizvedeni kao nano- i mikro-inkapsulirani, liofilizacijom osušeni pripravci. Bit će provedeno optimiranje sastava protektivnih matriksa za inkapsulaciju u svrhu postizanja zaštitnog učinka tijekom proizvodnje i oralne primjene, te boljeg preživljavanja i probiotičke aktivnosti sojeva BMK na ciljnom mjestu djelovanja.</p>
+<p style="text-align: justify;"><strong>Sažetak projekta: „Probiotici i starter kulture – površinski proteini i bakteriocini (01.07.2015. – 30.06.2019.):</strong></p>
+<p style="text-align: justify;">Svrha predloženog istraživanja je razvoj nove generacije probiotika i funkcionalnih starter kultura, detaljno okarakteriziranih, sa specifičnim svojstvima kao što je proizvodnja funkcionalnih površinskih S-proteina i bakteriocina. Od ukupno dvjesto različitih autohtonih sojeva bakterija mliječne kiseline (BMK), izoliranih iz tradicionalnih fermentiranih proizvoda u Laboratoriju za tehnologiju antibiotika, enzima,probiotika i starter kultura Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu, samo pet <em>Lactobacillus</em> sojeva eksprimira sloj S-proteina na površini svojih stanica. Istraživanja će se provoditi s ciljem razjašnjavanja uloge S-proteina u stanicama Lactobacillus sojeva, posebno u važnim probiotičkim svojstvima, kao što su adhezija, kompetitivna ekskluzija patogena i interakcije s imunološkim sustavom domaćina. Istraživanja će također biti usmjerena na proizvodnju bakteriocina autohtonih sojeva BMK, mehanizma njihovog djelovanja i indukciju sinteze bakteriocina. Izolirani autohtoni sojevi BMK bit će dalje ispitivani obzirom na fiziološka i tehnološka svojstva važna pri odabiru funkcionalnih starter kultura. Obzirom da su tradicionalno proizvedeni fermentirani proizvodi bogat izvor novih i potencijalno zanimljivih mikrobnih sojeva poželjnih genetičkih, metabolizamskih i tehnoloških svojstava, okarakterizirani sojevi BMK, proizvedeni kao mikroinkapsulirane i liofilizirane funkcionalne starter kulture će doprinijeti kvaliteti i sigurnosti tradicionalnih fermentacijskih procesa kao i formulaciji inovativnih funkcionalnih proizvoda. Oboje je od velikog značaja za prehrambenu industriju s aspekta proizvodnje hrane s posebno definiranim funkcionalnim (probiotičkim) svojstvima.</p>
+			</div></details></div></section>
+  <section class="section" id="tim"><div class="wrap"><div class="team-intro"><div><div class="section-number">02 / Ljudi iza projekta</div><h2>Projektni tim.</h2></div><p class="lead">Zajedno istražujemo potencijal korisnih mikroorganizama.</p></div><div class="team-grid"><article class="person"><span class="initial">BK.</span><h3>Blaženka Kos</h3><p>Redoviti profesor u trajnom zvanju<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">JŠ.</span><h3>Jagoda Šušković</h3><p>Professor emerita<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">JN.</span><h3>Jasna Novak</h3><p>Redoviti profesor u trajnom zvanju<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">AL.</span><h3>Andreja Leboš Pavunc</h3><p>Izvanredniprofesor<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">MB.</span><h3>Martina Banić</h3><p>Viši asistent<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">KB.</span><h3>Katarina Butorac</h3><p>Viši asistent<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">AS.</span><h3>Anita Slavica</h3><p>Redoviti profesor u trajnom zvanju<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">AB.</span><h3>Ana Butorac</h3><p>Viši znanstveni suradnik<br>Selvita d.o.o.. (Hrvatska)</p></article><article class="person"><span class="initial">MC.</span><h3>Maria Michela Corsaro</h3><p>Izvanredni profesor<br>Sveučilište u Napulju (Italija)</p></article><article class="person"><span class="initial">AC.</span><h3>Angela Casillo</h3><p>Docent<br>Sveučilište u Napulju (Italija)</p></article><article class="person"><span class="initial">AS.</span><h3>Ana Savić Mlakar</h3><p>Znanstveni suradnik<br>SUZG CEBIO (Hrvatska)</p></article><article class="person"><span class="initial">NO.</span><h3>Nada Oršolić</h3><p>Redoviti profesor u trajnom zvanju<br>SUZG PMF (Hrvatska)</p></article><article class="person"><span class="initial">DO.</span><h3>Dyana Odeh</h3><p>Viši asistent<br>SUZG PMF (Hrvatska)</p></article><article class="person"><span class="initial">TG.</span><h3>Tomislava Grgić</h3><p>Viši asistent<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">MR.</span><h3>Mia Radović</h3><p>Viši asistent<br>SUZG PBF (Hrvatska)</p></article><article class="person"><span class="initial">KD.</span><h3>Kristina Dučkić</h3><p>Asistent<br>SUZG PBF (Hrvatska)</p></article></div><details class="archive"><summary>Raniji projektni timovi</summary><div class="archive-content">
+		<p><strong>Projekt:</strong> Specifični bioaktivni metaboliti postbiotika i probiotika proizvedeni primjenom nusproizvoda mliječne industrije (09.12.2024. – 08.12.2027.)</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Ime</strong></td>
+<td><strong>Prezime</strong></td>
+<td><strong>Zvanje</strong></td>
+<td><strong>Organizacija</strong></td>
+</tr>
+<tr>
+<td>Blaženka</td>
+<td>Kos</td>
+<td>Redoviti profesor u trajnom zvanju</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Jagoda</td>
+<td>Šušković</td>
+<td>Professor emerita</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Jasna</td>
+<td>Novak</td>
+<td>Redoviti profesor u trajnom zvanju</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Andreja</td>
+<td>Leboš Pavunc</td>
+<td>Izvanredni</p>
+<p>profesor</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Martina</td>
+<td>Banić</td>
+<td>Viši asistent</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Katarina</td>
+<td>Butorac</td>
+<td>Viši asistent</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Anita</td>
+<td>Slavica</td>
+<td>Redoviti profesor u trajnom zvanju</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Ana</td>
+<td>Butorac</td>
+<td>Viši znanstveni suradnik</td>
+<td>Selvita d.o.o.. (Hrvatska)</td>
+</tr>
+<tr>
+<td>Maria Michela</td>
+<td>Corsaro</td>
+<td>Izvanredni profesor</td>
+<td>Sveučilište u Napulju (Italija)</td>
+</tr>
+<tr>
+<td>Angela</td>
+<td>Casillo</td>
+<td>Docent</td>
+<td>Sveučilište u Napulju (Italija)</td>
+</tr>
+<tr>
+<td>Ana</td>
+<td>Savić Mlakar</td>
+<td>Znanstveni suradnik</td>
+<td>SUZG CEBIO (Hrvatska)</td>
+</tr>
+<tr>
+<td>Nada</td>
+<td>Oršolić</td>
+<td>Redoviti profesor u trajnom zvanju</td>
+<td>SUZG PMF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Dyana</td>
+<td>Odeh</td>
+<td>Viši asistent</td>
+<td>SUZG PMF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Tomislava</td>
+<td>Grgić</td>
+<td>Viši asistent</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+<tr>
+<td>Mia</td>
+<td>Radović</td>
+<td>Viši asistent</td>
+<td>SUZG PBF (Hrvatska)</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Projekt:</strong> „Potencijalne terapijske biomolekule druge generacije probiotika“ (10.12.2019. &#8211; 09.12.2023.):</p>
+<table>
+<tbody>
+<tr>
+<td width="110"><strong>Ime </strong></td>
+<td width="147"><strong>Prezime </strong></td>
+<td width="111"><strong>Titula</strong></td>
+<td width="183"><strong>Ustanova</strong></td>
+</tr>
+<tr>
+<td width="110">Blaženka</td>
+<td width="147">Kos</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Jagoda</td>
+<td width="147">Šušković</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Jasna</td>
+<td width="147">Novak</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Andreja</td>
+<td width="147">Leboš Pavunc</td>
+<td width="111">Doc. dr. sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Martina</td>
+<td width="147">Banić</td>
+<td width="111">mag. ing. biotechn.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Katarina</td>
+<td width="147">Butorac</td>
+<td width="111">mag. ing. biotechn.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Ksenija</td>
+<td width="147">Durgo</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Paola</td>
+<td width="147">Cescutti</td>
+<td width="111">Prof. dr.sc.</td>
+<td width="183">Sveučilište u Trstu</td>
+</tr>
+<tr>
+<td width="110">Barbara</td>
+<td width="147">Bellich</td>
+<td width="111">Dr. sc.</td>
+<td width="183">Sveučilište u Trstu</td>
+</tr>
+<tr>
+<td width="110">Krešo</td>
+<td width="147">Bendelja</td>
+<td width="111">Dr. sc. i viši znanstveni suradnik</td>
+<td width="183">Centar za istraživanje i prijenos znanja u biotehnologiji Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Dyana</td>
+<td width="147">Odeh</td>
+<td width="111">mag. biol. exp.</td>
+<td width="183">PMF Sveučilište u Zagrebu</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Projekt</strong>: „Probiotici i starter kulture – površinski proteini i bakteriocini (01.07.2015. – 30.06.2019.):</p>
+<table style="height: 267px;" width="140">
+<tbody>
+<tr>
+<td width="110"><strong>Ime </strong></td>
+<td width="147"><strong>Prezime </strong></td>
+<td width="111"><strong>Titula</strong></td>
+<td width="183"><strong>Ustanova</strong></td>
+</tr>
+<tr>
+<td width="110">Blaženka</td>
+<td width="147">Kos</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Jagoda</td>
+<td width="147">Šušković</td>
+<td width="111">Prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Jasna</td>
+<td width="147">Novak (rođ. Beganović)</td>
+<td width="111">Izv.prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Andreja</td>
+<td width="147">Leboš Pavunc</td>
+<td width="111">Doc.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Ksenija</td>
+<td width="147">Uroić</td>
+<td width="111">Doc.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Martina</td>
+<td width="147">Banić</td>
+<td width="111">Mag. ing. biotechn.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Ksenija</td>
+<td width="147">Durgo</td>
+<td width="111">Izv.prof.dr.sc.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+<tr>
+<td width="110">Ljerka</td>
+<td width="147">Gregurek</td>
+<td width="111">Dr.sc.</td>
+<td width="183">Probiotik d.o.o.</td>
+</tr>
+<tr>
+<td width="110">Katarina</td>
+<td width="147">Tonković</td>
+<td width="111">Dipl.ing.</td>
+<td width="183">Probiotik d.o.o.</td>
+</tr>
+<tr>
+<td width="110">Katarina</td>
+<td width="147">Butorac (rođ. Zorić)</td>
+<td width="111">Mag. ing. biotechn.</td>
+<td width="183">PBF Sveučilište u Zagrebu</td>
+</tr>
+</tbody>
+</table>
+			</div></details></div></section>
+  <section class="section alt" id="istrazivanje"><div class="wrap"><div class="section-head"><div><div class="section-number">03 / Istraživanje</div><h2>Znanje koje<br>se razvija.</h2></div><p class="lead">Od karakterizacije sojeva do genomske analize i znanstvenih publikacija — istražite rezultate našeg rada.</p></div><div class="research-grid" id="baze"><a class="research-link" href="#proteoliza"><span class="index">01 / BAZA PODATAKA</span><strong>Sojevi s proteolitičkom aktivnošću</strong><span class="arrow">↗</span></a><a class="research-link" href="#eps"><span class="index">02 / BAZA PODATAKA</span><strong>Egzopolisaharidi i probiotička svojstva</strong><span class="arrow">↗</span></a><a class="research-link" href="#genomi"><span class="index">03 / BAZA PODATAKA</span><strong>Objavljene genomske sekvence</strong><span class="arrow">↗</span></a><a class="research-link" href="#druge-baze"><span class="index">04 / BAZE PODATAKA</span><strong>Ostale zbirke sojeva</strong><span class="arrow">↗</span></a><a class="research-link" href="#radovi"><span class="index">05 / PUBLIKACIJE</span><strong>Objavljeni znanstveni radovi</strong><span class="arrow">↗</span></a><a class="research-link" href="#dogadanja"><span class="index">06 / AKTIVNOSTI</span><strong>Skupovi, radionice i mediji</strong><span class="arrow">↗</span></a></div></div></section>
+  <section class="section white"><div class="wrap"><div class="section-head"><div><div class="section-number">04 / Rezultati</div><h2>Podaci i otkrića.</h2></div><p class="lead">Pregled sojeva bakterija mliječne kiseline, njihovih svojstava i objavljenih genomskih sekvenci.</p></div>
+    <div class="content-block" id="proteoliza"><div class="section-number">Baza podataka / 01</div><h3>Sojevi s proteolitičkom aktivnošću</h3><p>Anotirani su geni proteolitičkih sustava autohtonih sojeva bakterija mliječne kiseline, izoliranih iz svježih kravljih sireva, Lactococcus lactis subsp. lactis ZGBP5-51, Enterococcus faecium ZGBP5-52 i Enterococcus faecalis ZGBP5-53, selekcioniranih na temelju pozitivnog testa difuzije iz rupa u agaru na hranjivoj podlozi s 10 % (m/v) obranog mlijeka i 2,0 % (m/v) agara (Tablica 1).</p><label class="search-label" for="search-16">Pretraži tablicu</label><input class="search" id="search-16" type="search" data-table-search="table-16" aria-describedby="status-16" placeholder="Naziv enzima, skupina ili broj"><p class="search-status" id="status-16" aria-live="polite">Prikazano 39 od 39 redaka.</p><div class="table-wrap"><table id="table-16"><caption>Tablica 1A. Lactococcus lactis subsp. lactis ZGBP5-51</caption><thead><tr><th scope="col">Skupina enzima</th><th scope="col">Start</th><th scope="col">Kraj</th><th scope="col">b-lanac</th><th scope="col">Broj AK</th><th scope="col">Proteolitički enzimi</th></tr></thead><tbody><tr><td>AP</td><td>111769</td><td>112836</td><td>-</td><td>355</td><td>GlutamIl aminopeptidaza</td></tr><tr><td>AP</td><td>22827</td><td>25367</td><td>+</td><td>846</td><td>Lizil aminopeptidaza</td></tr><tr><td>AP</td><td>176368</td><td>177426</td><td>-</td><td>352</td><td>Aminopeptidaza YpdF (MP-, MA-, MS-, AP-, NP- specifična)</td></tr><tr><td>AP</td><td>71050</td><td>71904</td><td>-</td><td>284</td><td>Metionin aminopeptidaza</td></tr><tr><td>AP</td><td>9166</td><td>10407</td><td>-</td><td>413</td><td>Tripeptid aminopeptidaza</td></tr><tr><td>AP</td><td>11409</td><td>12773</td><td>+</td><td>454</td><td>Aminopeptidaza C</td></tr><tr><td>AP</td><td>3</td><td>761</td><td>+</td><td>252</td><td>Aminopeptidaza S (usmjerena na Leu, Val, Phe, Tyr)</td></tr><tr><td>AP</td><td>868</td><td>1347</td><td>-</td><td>159</td><td>Pretpostavljena aminopeptidaza YsdC</td></tr><tr><td>PR</td><td>8597</td><td>9889</td><td>+</td><td>430</td><td>Neokarakterizirana proteaza YrrO</td></tr><tr><td>PR</td><td>21658</td><td>22686</td><td>+</td><td>342</td><td>Lon-proteaza s PDZ domenom</td></tr><tr><td>PR</td><td>15142</td><td>16428</td><td>+</td><td>428</td><td>Unutarmembranska proteaza RasP/YluC, implicirana u stanici division</td></tr><tr><td>PR</td><td>9990</td><td>11216</td><td>-</td><td>408</td><td>Serinska proteaza DegP/HtrA</td></tr><tr><td>PR</td><td>6547</td><td>7314</td><td>+</td><td>255</td><td>Clp proteaza podrijetlom iz bakteriofaga</td></tr><tr><td>PR</td><td>1688</td><td>1837</td><td>+</td><td>49</td><td>Ekstracelularna serinska proteaza epiP za lantibiotik epidermin</td></tr><tr><td>PR</td><td>4938</td><td>5645</td><td>+</td><td>235</td><td>Proteaza C podrijetlom iz bakteriofaga</td></tr><tr><td>PR</td><td>2280</td><td>2870</td><td>+</td><td>196</td><td>proteaza bakteriofaga za sazrijevanje glave faga</td></tr><tr><td>PR</td><td>3262</td><td>3930</td><td>-</td><td>222</td><td>CAAX amino terminalna proteza</td></tr><tr><td>PR</td><td>1599</td><td>2102</td><td>-</td><td>167</td><td>Unutarstanična proteaza</td></tr><tr><td>PR</td><td>1687</td><td>2370</td><td>-</td><td>227</td><td>Unutarstanična proteaza</td></tr><tr><td>PR</td><td>3</td><td>881</td><td>+</td><td>292</td><td>Proteaza IV</td></tr><tr><td>EP</td><td>3</td><td>320</td><td>-</td><td>106</td><td>Neutralna endopeptidaza</td></tr><tr><td>EP</td><td>3</td><td>206</td><td>+</td><td>67</td><td>Neutralna endopeptidaza</td></tr><tr><td>EP</td><td>3</td><td>320</td><td>-</td><td>106</td><td>Neutralna endopeptidaza</td></tr><tr><td>EP</td><td>1</td><td>1512</td><td>-</td><td>504</td><td>Neutralna endopeptidaza</td></tr><tr><td>EP</td><td>1266</td><td>1469</td><td>-</td><td>67</td><td>Neutralna endopeptidaza</td></tr><tr><td>P</td><td>109306</td><td>111711</td><td>+</td><td>801</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>P</td><td>171541</td><td>172920</td><td>+</td><td>459</td><td>Dipeptidaza</td></tr><tr><td>P</td><td>88489</td><td>88941</td><td>+</td><td>150</td><td>Lipoprotein signalna peptidaza</td></tr><tr><td>P</td><td>103043</td><td>105274</td><td>-</td><td>743</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>P</td><td>64484</td><td>66775</td><td>+</td><td>763</td><td>Xaa-Pro dipeptidil-peptidaza</td></tr><tr><td>P</td><td>90084</td><td>92078</td><td>-</td><td>664</td><td>Multimodularna transpeptidaza-transglikozilaza/Penicilin-vezujući protein 1A/1B (PBP1)</td></tr><tr><td>P</td><td>7114</td><td>8037</td><td>+</td><td>307</td><td>Peptidaza, U32 porodica podjedinica [C1]</td></tr><tr><td>P</td><td>45802</td><td>47226</td><td>+</td><td>474</td><td>Dipeptidaza</td></tr><tr><td>P</td><td>4250</td><td>4876</td><td>+</td><td>208</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>7040</td><td>7678</td><td>-</td><td>212</td><td>Pirolidon-karboksilat peptidaza</td></tr><tr><td>DP</td><td>171541</td><td>172920</td><td>+</td><td>459</td><td>Dipeptidaza</td></tr><tr><td>DP</td><td>6502</td><td>7920</td><td>-</td><td>472</td><td>Pretpostavljena  Xaa-His dipeptidaza</td></tr><tr><td>DP</td><td>59440</td><td>60528</td><td>+</td><td>362</td><td>Prolin dipeptidaza</td></tr><tr><td>DP</td><td>45802</td><td>47226</td><td>+</td><td>474</td><td>Dipeptidaza</td></tr></tbody></table></div><label class="search-label" for="search-20">Pretraži tablicu</label><input class="search" id="search-20" type="search" data-table-search="table-20" aria-describedby="status-20" placeholder="Naziv enzima, skupina ili broj"><p class="search-status" id="status-20" aria-live="polite">Prikazano 45 od 45 redaka.</p><div class="table-wrap"><table id="table-20"><caption>Tablica 1B. Enterococcus faecium ZGBP5-52</caption><thead><tr><th scope="col">Skupina enzima</th><th scope="col">Start</th><th scope="col">Kraj</th><th scope="col">b-lanac</th><th scope="col">Broj AK</th><th scope="col">Proteolitički enzimi</th></tr></thead><tbody><tr><td>AP</td><td>24562</td><td>25746</td><td>-</td><td>394</td><td>Isoaspartil aminopeptidaza Asp-X dipeptidaza</td></tr><tr><td>AP</td><td>47290</td><td>48369</td><td>+</td><td>359</td><td>Glutamil aminopeptidaza; Deblokirajuća aminopeptidaza</td></tr><tr><td>AP</td><td>14744</td><td>15976</td><td>-</td><td>410</td><td>Tripeptid aminopeptidaza</td></tr><tr><td>AP</td><td>42365</td><td>43693</td><td>-</td><td>442</td><td>Aminopeptidaza C</td></tr><tr><td>AP</td><td>1380</td><td>2612</td><td>-</td><td>410</td><td>Aminopeptidaza S (usmjerena na Leu, Val, Phe, Tyr) preference)</td></tr><tr><td>AP</td><td>4211</td><td>4975</td><td>+</td><td>254</td><td>Metionin aminopeptidaza</td></tr><tr><td>AP</td><td>23468</td><td>24532</td><td>+</td><td>354</td><td>Aminopeptidaza YpdF (MP-, MA-, MS-, AP-, NP- specifična)</td></tr><tr><td>AP</td><td>3856</td><td>4938</td><td>+</td><td>360</td><td>Pretpostavljena aminopeptidaza YsdC</td></tr><tr><td>PR</td><td>126872</td><td>127744</td><td>+</td><td>290</td><td>Membranska proteaza BA0301</td></tr><tr><td>PR</td><td>61225</td><td>61902</td><td>+</td><td>225</td><td>Intracelularna proteaza</td></tr><tr><td>PR</td><td>20452</td><td>21738</td><td>-</td><td>428</td><td>Neokarakterizirana cink proteaza YmfH</td></tr><tr><td>PR</td><td>21731</td><td>22999</td><td>-</td><td>422</td><td>FIG001621: cink proteaza</td></tr><tr><td>PR</td><td>76522</td><td>77208</td><td>+</td><td>228</td><td>Prepilin peptidaza ComC</td></tr><tr><td>PR</td><td>33588</td><td>34286</td><td>+</td><td>232</td><td>Intramembranska FIG056164: serinska proteaza</td></tr><tr><td>PR</td><td>14688</td><td>15395</td><td>-</td><td>235</td><td>Pretpostavljena membranska proteaza YugP</td></tr><tr><td>PR</td><td>38786</td><td>40294</td><td>+</td><td>502</td><td>ATP-ovisna Zn proteza</td></tr><tr><td>PR</td><td>67492</td><td>68115</td><td>+</td><td>207</td><td>Represor SOS-odaziva i proteaza LexA</td></tr><tr><td>PR</td><td>21499</td><td>23733</td><td>-</td><td>744</td><td>ATP-ovisna Clp proteaza, ATP-vezujuća podjedinica ClpE</td></tr><tr><td>PR</td><td>29875</td><td>30423</td><td>+</td><td>182</td><td>ATP-ovisna proteaza podjedinica HslV</td></tr><tr><td>PR</td><td>30437</td><td>31837</td><td>+</td><td>466</td><td>ATP-ovisna hsl proteaza ATP-vezujuća podjedinica HslU</td></tr><tr><td>PR</td><td>50169</td><td>51458</td><td>-</td><td>429</td><td>Serinska proteaza, DegP/HtrA</td></tr><tr><td>PR</td><td>48690</td><td>49343</td><td>-</td><td>217</td><td>ClpCP proteaza supstrat adapter protein MecA</td></tr><tr><td>PR</td><td>17323</td><td>17916</td><td>+</td><td>197</td><td>ATP-ovisna Clp proteaza proteolitička podjedinica ClpP</td></tr><tr><td>PR</td><td>34172</td><td>35197</td><td>+</td><td>341</td><td>Proteaza IV</td></tr><tr><td>PR</td><td>16368</td><td>17411</td><td>+</td><td>347</td><td>Lon-proteaza s PDZ domenom</td></tr><tr><td>PR</td><td>10149</td><td>10262</td><td>+</td><td>37</td><td>CAAX amino terminalna proteza</td></tr><tr><td>PR</td><td>18737</td><td>19987</td><td>-</td><td>416</td><td>ATP-ovisna Clp proteaza ATP-vezujuća podjedinica ClpX</td></tr><tr><td>PR</td><td>4560</td><td>5810</td><td>+</td><td>416</td><td>Neokarakterizirana proteaza YrrO</td></tr><tr><td>PR</td><td>915</td><td>3407</td><td>+</td><td>830</td><td>ATP-ovisna Clp proteaza, ATP-vezujuća podjedinica ClpC</td></tr><tr><td>PR</td><td>5556</td><td>5675</td><td>-</td><td>39</td><td>Neokarakterizirani protein sporadično raširen kod bakterija i Archaea, nije Lon-proteaza</td></tr><tr><td>EP</td><td>14156</td><td>16063</td><td>-</td><td>635</td><td>Neutralna endopeptidaza O</td></tr><tr><td>P</td><td>119944</td><td>122289</td><td>-</td><td>781</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>P</td><td>24562</td><td>25746</td><td>-</td><td>394</td><td>Izoaspartil aminopeptidaza i Asp-X dipeptidaza</td></tr><tr><td>P</td><td>29412</td><td>29876</td><td>-</td><td>154</td><td>Lipoprotein signalna peptidaza</td></tr><tr><td>P</td><td>53185</td><td>55566</td><td>+</td><td>793</td><td>Multimodularna transpeptidaza-transglikozilaza/Penicilin-vezujući protein 1A/1B (PBP1)</td></tr><tr><td>P</td><td>20585</td><td>21136</td><td>+</td><td>183</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>56859</td><td>57503</td><td>+</td><td>214</td><td>Pirolidon-karboksilat peptidaza</td></tr><tr><td>P</td><td>54170</td><td>54739</td><td>+</td><td>189</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>9668</td><td>10186</td><td>+</td><td>172</td><td>Signalna peptidaza tip I</td></tr><tr><td>P</td><td>3628</td><td>4551</td><td>+</td><td>307</td><td>Peptidaza, U32 porodica mala podjedinica [C1]</td></tr><tr><td>P</td><td>4684</td><td>6855</td><td>+</td><td>723</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>DP</td><td>117285</td><td>118391</td><td>-</td><td>368</td><td>Prolinska dipeptidaza</td></tr><tr><td>DP</td><td>24562</td><td>25746</td><td>-</td><td>394</td><td>Izoaspartil aminopeptidaza i Asp-X dipeptidaza</td></tr><tr><td>DP</td><td>50379</td><td>51719</td><td>+</td><td>446</td><td>Pretpostavljena Xaa-His dipeptidaza</td></tr><tr><td>DP</td><td>44095</td><td>45513</td><td>+</td><td>472</td><td>Pretpostavljena Xaa-His dipeptidaza</td></tr></tbody></table></div><label class="search-label" for="search-24">Pretraži tablicu</label><input class="search" id="search-24" type="search" data-table-search="table-24" aria-describedby="status-24" placeholder="Naziv enzima, skupina ili broj"><p class="search-status" id="status-24" aria-live="polite">Prikazano 46 od 46 redaka.</p><div class="table-wrap"><table id="table-24"><caption>Tablica 1C. Enterococcus faecalis ZGBP5-53</caption><thead><tr><th scope="col">Skupina enzima</th><th scope="col">Start</th><th scope="col">Kraj</th><th scope="col">b-lanac</th><th scope="col">Broj AK</th><th scope="col">Proteolitički enzimi</th></tr></thead><tbody><tr><td>AP</td><td>84606</td><td>85835</td><td>+</td><td>409</td><td>Tripeptid aminopeptidaza</td></tr><tr><td>AP</td><td>102016</td><td>102261</td><td>+</td><td>81</td><td>D-aminopeptidaza dipeptid-vezujući protein DppA</td></tr><tr><td>AP</td><td>102261</td><td>102863</td><td>+</td><td>200</td><td>D-aminopeptidaza dipeptid-vezujući protein DppA</td></tr><tr><td>AP</td><td>81702</td><td>82784</td><td>+</td><td>360</td><td>Pretpostavljena aminopeptidaza YsdC</td></tr><tr><td>AP</td><td>65601</td><td>66665</td><td>-</td><td>354</td><td>Aminopeptidaza YpdF (MP-, MA-, MS-, AP-, NP- specifična)</td></tr><tr><td>AP</td><td>34841</td><td>36169</td><td>+</td><td>442</td><td>Aminopeptidaza C</td></tr><tr><td>AP</td><td>47325</td><td>48545</td><td>-</td><td>406</td><td>Tripeptid aminopeptidaza</td></tr><tr><td>AP</td><td>7738</td><td>8814</td><td>-</td><td>358</td><td>Glutamil aminopeptidaza; deblokirajuća aminopeptidaza</td></tr><tr><td>AP</td><td>24933</td><td>25697</td><td>-</td><td>254</td><td>Metionin aminopeptidaza</td></tr><tr><td>AP</td><td>27843</td><td>29081</td><td>+</td><td>412</td><td>Aminopeptidaza S (usmjerena na Leu, Val, Phe, Tyr)</td></tr><tr><td>PR</td><td>215457</td><td>216077</td><td>-</td><td>206</td><td>Represor SOS-odgovora i proteaza LexA</td></tr><tr><td>PR</td><td>284743</td><td>286146</td><td>-</td><td>467</td><td>ATP-ovisna hsl proteaza ATP-vezujuća podjedinica HslU</td></tr><tr><td>PR</td><td>286161</td><td>286709</td><td>-</td><td>182</td><td>ATP-ovisna proteaza podjedinica HslV</td></tr><tr><td>PR</td><td>317600</td><td>319033</td><td>-</td><td>477</td><td>Karboksil-terminalna proteaza</td></tr><tr><td>PR</td><td>420770</td><td>421636</td><td>-</td><td>288</td><td>Membranska proteaza protein BA0301</td></tr><tr><td>PR</td><td>469497</td><td>470750</td><td>-</td><td>417</td><td>ATP-ovisna Clp proteaza ATP-vezujuća podjedinica ClpX</td></tr><tr><td>PR</td><td>148925</td><td>149587</td><td>+</td><td>220</td><td>ClpCP proteaza supstrat adapter protein MecA</td></tr><tr><td>PR</td><td>42349</td><td>43059</td><td>+</td><td>236</td><td>Intramembranska FIG056164: serinska proteaza</td></tr><tr><td>PR</td><td>164027</td><td>164707</td><td>-</td><td>226</td><td>Intracelularna proteaza</td></tr><tr><td>PR</td><td>134818</td><td>135510</td><td>+</td><td>230</td><td>Prepilin peptidaza ComC</td></tr><tr><td>PR</td><td>64327</td><td>65631</td><td>-</td><td>434</td><td>Neokarakterizinana cink proteaza YmfH</td></tr><tr><td>PR</td><td>65624</td><td>66892</td><td>-</td><td>422</td><td>FIG001621: cink proteaza</td></tr><tr><td>PR</td><td>2778</td><td>5018</td><td>+</td><td>746</td><td>ATP-ovisna Clp proteaza, ATP-vezujuća podjedinica ClpE</td></tr><tr><td>PR</td><td>42294</td><td>43346</td><td>-</td><td>350</td><td>Lon-proteaza s PDZ domenom</td></tr><tr><td>PR</td><td>3327</td><td>3920</td><td>+</td><td>197</td><td>ATP-ovisna Clp proteaza proteolitička podjedinica ClpP</td></tr><tr><td>PR</td><td>4633</td><td>5931</td><td>+</td><td>432</td><td>Serinska proteaza, DegP/HtrA</td></tr><tr><td>PR</td><td>50550</td><td>51218</td><td>-</td><td>222</td><td>CAAX amino terminalna proteza</td></tr><tr><td>PR</td><td>32738</td><td>33442</td><td>-</td><td>234</td><td>Pretpostavljena membranska proteaza YugP</td></tr><tr><td>PR</td><td>14698</td><td>15945</td><td>-</td><td>415</td><td>Neokarakterizirana proteaza YrrO</td></tr><tr><td>PR</td><td>18242</td><td>20737</td><td>-</td><td>831</td><td>ATP-ovisna Clp proteaza, ATP-vezujuća podjedinica ClpC</td></tr><tr><td>P</td><td>317027</td><td>317581</td><td>-</td><td>184</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>360181</td><td>360666</td><td>-</td><td>161</td><td>Lipoprotein signalna peptidaza</td></tr><tr><td>P</td><td>373994</td><td>376363</td><td>+</td><td>789</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>P</td><td>100916</td><td>102019</td><td>+</td><td>367</td><td>Peptidaza, obitelj M42</td></tr><tr><td>P</td><td>228782</td><td>229957</td><td>+</td><td>391</td><td>Peptidaza, obitelj M20/M25/M40</td></tr><tr><td>P</td><td>188769</td><td>189494</td><td>-</td><td>241</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>153784</td><td>155082</td><td>-</td><td>432</td><td>Peptidaza, obitelj M20/M25/M40</td></tr><tr><td>P</td><td>162587</td><td>164923</td><td>+</td><td>778</td><td>Multimodularna transpeptidaza-transglikozilaza/Penicilin-vezujući protein 1A/1B (PBP1)</td></tr><tr><td>P</td><td>202997</td><td>203539</td><td>-</td><td>180</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>80737</td><td>81378</td><td>+</td><td>213</td><td>Pirolidon-karboksilat peptidaza</td></tr><tr><td>P</td><td>29851</td><td>32037</td><td>-</td><td>728</td><td>Multimodularna transpeptidaza-transglikozilaza</td></tr><tr><td>P</td><td>67342</td><td>68190</td><td>+</td><td>282</td><td>Pretpostavljena peptidaza A</td></tr><tr><td>P</td><td>36082</td><td>36618</td><td>+</td><td>178</td><td>Signalna peptidaza I</td></tr><tr><td>P</td><td>15973</td><td>16893</td><td>-</td><td>306</td><td>Peptidaza, U32 mala podjedinica [C1]</td></tr><tr><td>DP</td><td>379739</td><td>380842</td><td>+</td><td>367</td><td>Prolinska dipeptidaza</td></tr><tr><td>DP</td><td>47622</td><td>49037</td><td>-</td><td>471</td><td>Pretpostavljena Xaa-His dipeptidaza</td></tr></tbody></table></div><p class="table-note">Kratice: AK aminokiselina; AP aminoproteaza; PR proteaza; EP endopeptidaza; P peptidaza; DP dipeptidaza</p></div>
+    <div class="content-block" id="eps"><div class="section-number">Baza podataka / 02</div><h3>Egzopolisaharidi i probiotička svojstva</h3><div class="table-wrap"><table id="table-32"><caption>Tablica 1. Pregled identificiranih egzopolisaharida (EPS-a) sekvenciranih sojeva bakterija mliječne kiseline izoliranih iz majčinog mlijeka, mlijeka magarice i dimljenog sira.</caption><thead><tr><th scope="col">Bakterijski soj producent EPS-a</th><th scope="col">Metoda detekcije EPS-a</th><th scope="col">Potvrda prisutnosti EPS-a</th><th scope="col">Kemijski sastav EPS-a</th><th scope="col">Masa EPS-a (kDa)</th></tr></thead><tbody><tr><td>Limosilactobacillus fermentum MC1</td><td>„ropy“ fenotip</td><td>SEC, NMR, GC, GC-MS</td><td>EPS-1 (Glu-Gal)<br>EPS-2 (Glu)</td><td>50<br>10</td></tr><tr><td>Limosilactobacillus fermentum D12</td><td>„ropy“ fenotip</td><td>SEC, NMR, GC, GC-MS</td><td>EPS-1 (Glu-Gal)<br>EPS-2 (Glu)</td><td>2<br>400</td></tr><tr><td>Lactiplantibacillus plantarum DM1</td><td>„ropy“ fenotip</td><td>NMR, GC-MS</td><td>EPS-2 (Glu)</td><td>Will be determined</td></tr><tr><td>Lactiplantibacillus plantarum MB18</td><td>„ropy“ fenotip</td><td>NMR, GC-MS</td><td>Will be determined</td><td>Will be determined</td></tr></tbody></table></div><details class="archive"><summary>Prethodni sadržaj baze EPS sojeva</summary><div class="archive-content">
+		<p>Pregled <em>Lactobacillus</em> sojeva definiranih probiotičkih svojstava koji su izolirani u Laboratoriju za tehnologiju antibiotika, enzima, probiotika i starter kultura (LTAEPSK) Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu te karakteristika njihovih egzopolisaharida, prikazan je u  Tablici 1.</p>
+<p>&nbsp;</p>
+<p><em>Lactobacillus</em> sojevi, producenti egzopolisaharida, imaju sljedeća definirana probiotička svojstva:</p>
+<ul>
+<li>otpornost na stresne uvjete gastrointestinalnog trakta</li>
+<li>osjetljivost na antibiotike</li>
+<li>otpornost na tehnološke i fiziološke stresne uvjete te visok broj živih bakterijskih stanica nakon kultivacije i proizvodnje osušenih liofiliziranih pripravaka</li>
+<li>agregacijska i adhezijska svojstva</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Tablica 1.</strong> Pregled identificiranih egzopolisaharida (EPS-a) sekvenciranih sojeva bakterija mliječne kiseline izoliranih iz majčinog mlijeka i dimljenog sira.</p>
+<table>
+<tbody>
+<tr>
+<td width="143"><strong>Bakterijski soj producent EPS-a</strong></td>
+<td width="121"><strong>Metoda detekcije EPS-a</strong></td>
+<td width="125"><strong>Potvrda prisutnosti EPS-a</strong></td>
+<td width="115"><strong>Kemijski sastav EPS-a</strong></td>
+<td width="97"><strong>Masa EPS-a (kDa)</strong></td>
+</tr>
+<tr>
+<td width="143"><em>Limosilactobacillus fermentum</em> MC1</td>
+<td width="121">„ropy“ fenotip</td>
+<td width="125">SEC, NMR, GC, GC-MS</td>
+<td width="115">EPS-1 (Glu-Gal)</p>
+<p>EPS-2 (Glu)</td>
+<td width="97"> 50</p>
+<p>10</td>
+</tr>
+<tr>
+<td width="143"><em>Limosilactobacillus fermentum</em> D12</td>
+<td width="121">„ropy“ fenotip</td>
+<td width="125">SEC, NMR, GC, GC-MS</td>
+<td width="115">EPS-1 (Glu-Gal)</p>
+<p>EPS-2 (Glu)</td>
+<td width="97">2</p>
+<p>400</td>
+</tr>
+<tr>
+<td width="143"><em>Lactiplantibacillus plantarum</em> DM1</td>
+<td width="121">„ropy“ fenotip</td>
+<td width="125">NMR</td>
+<td width="115">EPS-2 (Glu)</td>
+<td width="97">Will be determined</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+			</div></details></div>
+    <div class="content-block" id="genomi"><div class="section-number">Baza podataka / 03</div><h3>Objavljene genomske sekvence</h3><div class="table-wrap"><table id="table-37"><caption>Tablica 1. Pristupni brojevi u NCBI bazi podataka za genome sekvenciranih sojeva bakterijamliječne kiseline izoliranih iz tradicionalno proizvedenih fermentiranih namirnica (sirevi,kupus).</caption><thead><tr><th scope="col">Soj bakterija mliječne kiseline</th><th scope="col">Pristupni broj</th><th scope="col">BioUzorak</th><th scope="col">BioProjekt</th></tr></thead><tbody><tr><td>Limosilactobacillus fermentum D12</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/RHMA00000000">RHMA00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN10319712">SAMN10319712</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Limosilactobacillus fermentum D13</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGG00000000">NIGG00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179270">SAMN07179270</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Lactiplantibacillus plantarum SF15C</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGH00000000">NIGH00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179269">SAMN07179269</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Levilactobacillus brevis SF15B</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGI00000000">NIGI00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179268">SAMN07179268</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Levilactobacillus brevis SF9B</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGJ00000000">NIGJ00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179267">SAMN07179267</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Levilactobacillus brevis ZG1</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGK00000000">NIGK00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179266">SAMN07179266</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Lactiplantibacillus plantarum M92C</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGL00000000">NIGL00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179265">SAMN07179265</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Lactobacillus helveticus M92</td><td><a href="https://www.ncbi.nlm.nih.gov/nuccore/NIGM00000000">NIGM00000000</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07179264">SAMN07179264</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Lc. lactis subsp. lactis ZGBP5-51</td><td>JAXBVH000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN38281847">SAMN38281847</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>E. faecium ZGBP5-52</td><td>JAXBVG000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN38282040">SAMN38282040</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>E. faecalis ZGBP5-53</td><td>JAXCGY000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN38380667">SAMN38380667</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA388578">PRJNA388578</a></td></tr><tr><td>Lactiplantibacillus<br>plantarum MB18</td><td></td><td></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1370674">PRJNA1370674</a></td></tr></tbody></table></div><div class="table-wrap"><table id="table-40"><caption>Tablica 2. Pristupni brojevi u NCBI bazi podataka za genome sekvenciranih sojeva bakterija mliječne kiseline izoliranih iz majčinog mlijeka.</caption><thead><tr><th scope="col">Soj bakterija mliječne kiseline</th><th scope="col">Pristupni broj</th><th scope="col">BioUzorak</th><th scope="col">BioProjekt</th></tr></thead><tbody><tr><td>Lactiplantibacillus plantarum KR19</td><td>JAJEUJ000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155536">SAMN22155536</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Lactiplantibacillus plantarum MC19</td><td>JAJEUD000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155542">SAMN22155542</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Levilactobacillus brevis MB1</td><td>JAJEUF000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155540">SAMN22155540</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Levilactobacillus brevis MB2</td><td>JAJEUG000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155539">SAMN22155539</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Levilactobacillus brevis MB13</td><td>JAJEUH000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155538">SAMN22155538</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Levilactobacillus brevis MB20</td><td>JAJEUE000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155541">SAMN22155541</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Limosilactobacillus fermentum MC1</td><td>JAJEUI000000000</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155537">SAMN22155537</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA769625">PRJNA769625</a></td></tr><tr><td>Lactiplantibacillus<br>plantarum MB18</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN53475368">SAMN53475368</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN53475368">SAMN53475368</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1370674">PRJNA1370674</a></td></tr><tr><td>Lactiplantibacillus<br>plantarum MB7</td><td>Will be anounced</td><td>Will be anounced</td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1516440">PRJNA1516440</a></td></tr><tr><td>Lactiplantibacillus<br>plantarum MB15</td><td>Will be anounced</td><td>Will be anounced</td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1516440">PRJNA1516440</a></td></tr><tr><td>Lactiplantibacillus<br>plantarum RS10</td><td>Will be anounced</td><td>Will be anounced</td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1516440">PRJNA1516440</a></td></tr></tbody></table></div><p>Provedeno je i sekvencioniranje čitavog genoma soja BMK, producenata egzopolisaharida, izoliranog iz mlijeka magarice. Njegov genom je objavljen u NCBI (eng. National Center for Biotechnology Information) bazi podataka, a pregled brojeva pod kojim je objavljen (eng. Accesion numbers) prikazan je u Tablici 3.</p><div class="table-wrap"><table id="table-45"><caption>Tablica 3. Pristupni brojevi u NCBI bazi podataka za genom sekvenciranog soja bakterija mliječne kiseline izoliranog iz mlijeka magarice.</caption><thead><tr><th scope="col">Soj bakterija mliječne kiseline</th><th scope="col">Pristupni broj</th><th scope="col">BioUzorak</th><th scope="col">BioProjekt</th></tr></thead><tbody><tr><td>Lactiplantibacillus plantarum DM1</td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN53475367">SAMN53475367</a></td><td><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN53475367">SAMN53475367</a></td><td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1370674">PRJNA1370674</a></td></tr></tbody></table></div><details class="archive"><summary>Prethodni sadržaj o genomskim sekvencama</summary><div class="archive-content">
+		<p>Glavna istraživanja u Laboratoriju za tehnologiju antibiotika, enzima, probiotika i starter kultura (LTAEPSK) Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu su usmjerena na izolaciju, identifikaciju te  biokemijsku i molekularnu karakterizaciju autohtonih bakterija mliječne kiseline (BMK) u svrhu razvoja nove generacije probiotika i funkcionalnih starter kultura.  Zbirka mikroorganizama LTAEPSK-a sadrži 300 autohtonih izolata BMK. Među njima, posebno se ističu sojevi sa specifičnim svojstvima ekspresije površinskih S-proteina i proizvodnje bakteriocina. Ti su sojevi detaljno okarakterizirani, prilikom čega je provedeno sekvenciranje njihovih genoma koji su objavljeni u NCBI (eng. National Center for Biotechnology Information) bazi podataka. Pregled brojeva pod kojim su objavljeni (eng. Accesion numbers) prikazan je u Tablici 1.</p>
+<p>&nbsp;</p>
+<p>Tablica 1. Pristupni brojevi u NCBI bazi podataka za genome sekvenciranih sojeva bakterija<br />
+mliječne kiseline izoliranih iz tradicionalno proizvedenih fermentiranih namirnica (sirevi,<br />
+kupus).</p>
+<table>
+<tbody>
+<tr>
+<td width="237"><strong>Soj bakterija mliječne kiseline</strong></td>
+<td width="117"><strong>Pristupni broj</strong></td>
+<td width="116"><strong>BioUzorak</strong></td>
+<td width="130"><strong>BioProjekt</strong></td>
+</tr>
+<tr>
+<td width="237"><em>Limosilactobacillus fermentum</em> D12</td>
+<td width="117">RHMA00000000</td>
+<td width="116">SAMN10319712</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Limosilactobacillus fermentum</em> D13</td>
+<td width="117">NIGG00000000</td>
+<td width="116">SAMN07179270</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Lactiplantibacillus plantarum</em> SF15C</td>
+<td width="117">NIGH00000000</td>
+<td width="116">SAMN07179269</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Levilactobacillus brevis</em> SF15B</td>
+<td width="117">NIGI00000000</td>
+<td width="116">SAMN07179268</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Levilactobacillus brevis</em> SF9B</td>
+<td width="117">NIGJ00000000</td>
+<td width="116">SAMN07179267</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Levilactobacillus brevis </em>ZG1</td>
+<td width="117">NIGK00000000</td>
+<td width="116">SAMN07179266</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Lactiplantibacillus plantarum</em> M92C</td>
+<td width="117">NIGL00000000</td>
+<td width="116">SAMN07179265</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Lactobacillus helveticus</em> M92</td>
+<td width="117">NIGM00000000</td>
+<td width="116">SAMN07179264</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Lc. lactis</em> subsp. <em>lactis </em>ZGBP5-51</td>
+<td width="117">JAXBVH000000000</td>
+<td width="116">SAMN38281847</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>E. faecium</em> ZGBP5-52</td>
+<td width="117">JAXBVG000000000</td>
+<td width="116">SAMN38282040</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>E. faecalis</em> ZGBP5-53</td>
+<td width="117">JAXCGY000000000</td>
+<td width="116">SAMN38380667</td>
+<td width="130">PRJNA388578</td>
+</tr>
+<tr>
+<td width="237"><em>Lactiplantibacillus</em></p>
+<p><em>plantarum</em> MB18</td>
+<td width="117"></td>
+<td width="116"></td>
+<td width="130"><span style="color: #000000;">PRJNA1370674</span></td>
+</tr>
+</tbody>
+</table>
+<p>Provedeno je i sekvencioniranje čitavog genoma sojeva BMK, producenata S-proteina, egzopolisaharida i bakteriocina, izoliranih iz majčinog mlijeka. Njihovi genomi su objavljeni u NCBI (eng. National Center for Biotechnology Information) bazi podataka, a pregled brojeva pod kojim su objavljeni (eng. Accesion numbers) prikazan je u Tablici 2.</p>
+<p><strong>Tablica 2.</strong> Pristupni brojevi u NCBI bazi podataka za genome sekvenciranih sojeva bakterija mliječne kiseline izoliranih iz majčinog mlijeka.</p>
+<table>
+<tbody>
+<tr>
+<td width="232"><strong>Soj bakterija mliječne kiseline</strong></td>
+<td width="133"><strong>Pristupni broj</strong></td>
+<td width="116"><strong>BioUzorak</strong></td>
+<td width="120"><strong>BioProjekt</strong></td>
+</tr>
+<tr>
+<td width="232"><em>Lactiplantibacillus plantarum</em> KR19</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUJ000000000">JAJEUJ000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155536">SAMN22155536</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Lactiplantibacillus plantarum</em> MC19</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUD000000000">JAJEUD000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155542">SAMN22155542</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Levilactobacillus brevis </em>MB1</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUF000000000">JAJEUF000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155540">SAMN22155540</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Levilactobacillus brevis</em> MB2</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUG000000000">JAJEUG000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155539">SAMN22155539</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Levilactobacillus brevis</em> MB13</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUH000000000">JAJEUH000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155538">SAMN22155538</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Levilactobacillus brevis </em>MB20</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUE000000000">JAJEUE000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155541">SAMN22155541</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+<tr>
+<td width="232"><em>Limosilactobacillus fermentum</em> MC1</td>
+<td width="133"><a href="https://www.ncbi.nlm.nih.gov/nuccore/JAJEUI000000000">JAJEUI000000000</a></td>
+<td width="116"><a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN22155537">SAMN22155537</a></td>
+<td width="120">PRJNA769625</td>
+</tr>
+</tbody>
+</table>
+			</div></details></div>
+    <div class="content-block" id="druge-baze"><div class="section-number">Baze podataka / 04</div><h3>Ostale zbirke sojeva</h3><details class="archive"><summary>Lactobacillus sojevi sa S-proteinima i definiranim probiotičkim svojstvima</summary><div class="archive-content">
+		<p>Pregled <em>Lactobacillus</em> sojeva definiranih probiotičkih svojstava koji su izolirani u Laboratoriju za tehnologiju antibiotika, enzima, probiotika i starter kultura (LTAEPSK) Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu te karakteristika njihovih S-proteina, prikazan je u <strong> Tablicama 1 i 2</strong>.</p>
+<p><em>Lactobacillus</em> sojevi sa S-proteinima imaju sljedeća definirana probiotička svojstva:</p>
+<ul>
+<li>otpornost na stresne uvjete gastrointestinalnog trakta</li>
+<li>osjetljivost na antibiotike</li>
+<li>otpornost na tehnološke i fiziološke stresne uvjete te visok broj živih bakterijskih stanica nakon kultivacije i proizvodnje osušenih liofiliziranih pripravaka</li>
+<li>hidrofobnost, autoagregacijska, koagregacijska i adhezijska svojstva</li>
+<li>asimilacija kolesterola, bez hidrolazne aktivnosti prema žučnim solima</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong> Tablica 1.</strong> Pregled identificiranih S-proteina sekvenciranih sojeva bakterija mliječne kiseline, izoliranih iz tradicionalno proizvedenih fermentiranih namirnica.</p>
+<table style="height: 461px;" width="416">
+<tbody>
+<tr>
+<td style="text-align: center;" width="108"><strong>Bakterijski soj</strong></td>
+<td style="text-align: center;" width="241"><strong>Metoda detekcije</strong><strong> ekspresije S-proteina na proteomskoj razini</strong></td>
+<td style="text-align: center;" width="161"><strong>Potvrda prisutnosti gena za S-proteine</strong></td>
+<td style="text-align: center;" width="109"><strong>Masa S-proteina (Da)</strong></td>
+</tr>
+<tr>
+<td width="108"><em>Lactobacillus helveticus </em>M92</td>
+<td width="241">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela, MALDI-TOF analiza dijaliziranih proteina u otopini</td>
+<td style="text-align: center;" width="161">LHE_RS22135 (M92_contig_38)</td>
+<td style="text-align: center;" width="109">46660</td>
+</tr>
+<tr>
+<td width="108"><em>Lactobacillus brevis </em>D6</td>
+<td width="241">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela</td>
+<td style="text-align: center;" width="161">slpB (D6_contig_18)</td>
+<td style="text-align: center;" width="109">48826</td>
+</tr>
+<tr>
+<td width="108"><em>Lactobacillus brevis </em>ZG1</td>
+<td width="241">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela</td>
+<td style="text-align: center;" width="161">slpA (ZG1_contig_6)</td>
+<td style="text-align: center;" width="109">48130</td>
+</tr>
+<tr>
+<td width="108"><em>Lactobacillus brevis </em>SF9B</td>
+<td width="241">SDS PAGE, 2D elektroforeza, LC-MS analiza proteinskih vrpci izrezanih iz gela</td>
+<td style="text-align: center;" width="161">slpA (SF9B_contig_38)</td>
+<td style="text-align: center;" width="109">50894</td>
+</tr>
+<tr>
+<td width="108"><em>Lactobacillus brevis </em>SF15B</td>
+<td width="241">SDS PAGE, 2D elektroforeza</td>
+<td style="text-align: center;" width="161">slpB (SF15B_contig_67)</td>
+<td style="text-align: center;" width="109">50894</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Tablica 2.</strong> Pregled identificiranih S-proteina sekvenciranih sojeva bakterija mliječne kiseline izoliranih iz majčinog mlijeka.</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="117"><strong>Bakterijski soj</strong></td>
+<td width="202"><strong>Metoda detekcije ekspresije S-proteina na proteomskoj razini</strong></td>
+<td width="184"><strong>Potvrda prisutnosti S-proteina</strong></td>
+<td width="111"><strong>Masa S-proteina (Da)</strong></td>
+</tr>
+<tr>
+<td width="117"><em>Levilactobacillus brevis </em>MB1</td>
+<td width="202">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela i homologija utvrđena pretraživanjem Mascot baze podataka</td>
+<td width="184">score 484 s <em>L. brevis </em>-pristupni broj WP_097547033.1</td>
+<td width="111">∼ 50000</td>
+</tr>
+<tr>
+<td width="117"><em>Levilactobacillus brevis </em>MB2</td>
+<td width="202">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela i homologija utvrđena pretraživanjem Mascot baze podataka</td>
+<td width="184">score 462 s <em>L. brevis </em>&#8211; pristupni broj WP_097547033.1</td>
+<td width="111">∼ 50000</td>
+</tr>
+<tr>
+<td width="117"><em>Levilactobacillus brevis </em>MB13</td>
+<td width="202">SDS PAGE, LC-MS/MS analiza proteinske vrpce izrezane iz gela i homologija utvrđena pretraživanjem Mascot baze podataka</td>
+<td width="184">score s 437 <em>L. brevis </em>&#8211; pristupni broj WP_097547033.1</td>
+<td width="111">∼ 50000</td>
+</tr>
+<tr>
+<td width="117"><em>Levilactobacillus brevis </em>MB20</td>
+<td width="202">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela i homologija utvrđena pretraživanjem Mascot baze podataka</td>
+<td width="184">score s 647 <em>L. brevis </em>&#8211; pristupni broj WP_097547033.1</td>
+<td width="111">∼ 50000</td>
+</tr>
+</tbody>
+</table>
+			</div></details><details class="archive"><summary>Bakteriocinogeni Lactobacillus sojevi i njihovi bakteriocini</summary><div class="archive-content">
+		<p>Bakteriocini koje proizvode bakterije mliječne kiseline (BMK) su ribosomski sintetizirani antimikrobni peptidi ili proteini koji djeluju antimikrobno prema srodnim Gram-pozitivnim bakterijama. Među brojnim izolatima BMK iz Zbirke mikroorganizama LTAEPSK-a,  ispitanim s aspekta antimikrobnog i bakteriocinskog djelovanja, tri <em>Lactobacillus </em>soja pokazala su izrazito dobre rezultate.</p>
+<p>Bakteriocini tih sojeva imaju sljedeća svojstva:</p>
+<ul>
+<li>molekulska masa oko 7 kDa</li>
+<li>bakteriostatski, odnosno bakteriocidni mehanizam djelovanja prema test-mikrooranizmima <em>Staphylococcus aureus</em> 3048 i<em> Listeria monocytogenes</em> ATCC19111</li>
+<li>induciranje proizvodnje uzgojem sojeva producenata u ko-kulturi s osjetljivim test-mikroorganizmima.</li>
+</ul>
+<p>Pregled navedenih <em>Lactobacillus </em>sojeva te gena vezanih uz njihovu bakteriocinogenu aktivnost, prikazan je u Tablicama 1 i 2.</p>
+<p><strong>Tablica 1.</strong> Geni <em>Lactobacillus</em> sojeva izoliranih iz autohtonih fermentiranih proizvoda koji kodiraju za bakteriocine, tj. za proteine povezane s biosintezom i transportom bakteriocina iz stanice, te za imunost stanice soja producenta na bakteriocinsko djelovanje.</p>
+<table style="height: 2039px;" width="695">
+<tbody>
+<tr>
+<td width="151"><strong>Bakterijski soj</strong></td>
+<td width="500"><strong>Gen</strong></td>
+</tr>
+<tr>
+<td rowspan="12" width="151"><strong><em>L. plantarum</em></strong><strong> SF15C</strong></td>
+<td width="500">plnG bacteriocin ABC-transporter, ATP-binding and permease protein PlnG  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">plnH bacteriocin ABC transporter, accessory factor PlnH  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">plnI bacteriocin immunity protein PlnI,membrane-bound protease CAAX family  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">plnF bacteriocin precursor peptide PlnF  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">plnE bacteriocin precursor peptide PlnE  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">lp_2952 bacteriocin immunity protein  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">lp_3268 bacteriocin immunity protein, EntA family  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">lp_2616 bacteriocin immunity protein  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">lp_3301 bacteriocin transport protein  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">lp_0972 bacteriocin immunity protein  [ Lactobacillus plantarum WCFS1]</td>
+</tr>
+<tr>
+<td width="500">plnL bacteriocin immunity protein PlnL [ Lactobacillus brevis ATCC 367 ]</td>
+</tr>
+<tr>
+<td width="500">plnR plantaricin biosynthesis protein PlnR [ Lactobacillus brevis ATCC 367 ]</td>
+</tr>
+<tr>
+<td rowspan="20" width="151"><strong><em>L. plantarum</em></strong><strong> D13</strong></td>
+<td width="500">lp_2616 bacteriocin immunity protein [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnG bacteriocin ABC-transporter, ATP-binding and permease protein PlnG [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnH bacteriocin ABC transporter, accessory factor PlnH [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnI bacteriocin immunity protein PlnI,membrane-bound protease CAAX family [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnE bacteriocin precursor peptide PlnE [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnF bacteriocin precursor peptide PlnF [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnA plantaricin A precursor peptide, induction factor [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnO plantaricin biosynthesis protein PlnO [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnP bacteriocin immunity protein PlnP,membrane-bound protease CAAX family [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnL bacteriocin immunity protein PlnL [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnM bacteriocin immunity protein PlnM [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnQ plantaricin biosynthesis protein PlnQ [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnK bacteriocin precursor peptide PlnK [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnJ bacteriocin precursor peptide PlnJ [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnN bacteriocin precursor peptide PlnN [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">plnR plantaricin biosynthesis protein PlnR [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">lp_2952 bacteriocin immunity protein [ Lactobacillus plantarum WCFS1 ] [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">lp_0972 bacteriocin immunity protein [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">lp_3301 bacteriocin transport protein [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+<tr>
+<td width="500">lp_3268 bacteriocin immunity protein, EntA family [ Lactobacillus plantarum WCFS1 ]</td>
+</tr>
+</tbody>
+</table>
+<table style="height: 2547px;" width="703">
+<tbody>
+<tr>
+<td rowspan="17" width="151"><em><strong>Lactobacillus plantarum SF9C</strong></em></td>
+<td width="510">Putative bacteriocin Immunity protein</td>
+</tr>
+<tr>
+<td width="510">ComC; Bacteriocin_IIc; 173.2;Plantaricin_K</td>
+</tr>
+<tr>
+<td width="510">172.2;Plantaricin_J</td>
+</tr>
+<tr>
+<td width="510">P71462_LACPL Immunity protein PlnM</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin_IIc; 174.2;Plantaricin_N</td>
+</tr>
+<tr>
+<td width="510">PlnO</td>
+</tr>
+<tr>
+<td width="510">P71468_LACPL PlnI (Immunity protein PlnI, membrane-bound protease CAAX family)</td>
+</tr>
+<tr>
+<td width="510">Antimicrobial17; Bacteriocin_IIc; 167.2;Plantaricin_A</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin production related histidine kinase</td>
+</tr>
+<tr>
+<td width="510">Response regulator PlnC, activator</td>
+</tr>
+<tr>
+<td width="510">response regulator PlnD</td>
+</tr>
+<tr>
+<td width="510">P71468_LACPL PlnI (Immunity protein PlnI, membrane-bound protease CAAX family)</td>
+</tr>
+<tr>
+<td width="510">ggmotif; Lactococcin; Bacteriocin_IIc; 171.2;Plantaricin_F</td>
+</tr>
+<tr>
+<td width="510">170.2;Plantaricin_E</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin ABC-transporter, ATP-binding and permease protein PlnG</td>
+</tr>
+<tr>
+<td width="510">Accessory factor for ABC-transporter PlnH</td>
+</tr>
+<tr>
+<td width="510">PlnS</td>
+</tr>
+<tr>
+<td rowspan="17" width="151"><em><strong>Lactobacillus plantarum M92C</strong></em></td>
+<td width="510">PlnS</td>
+</tr>
+<tr>
+<td width="510">Accessory factor for ABC-transporter PlnH</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin ABC-transporter, ATP-binding and permease protein PlnG</td>
+</tr>
+<tr>
+<td width="510">170.2;Plantaricin_E</td>
+</tr>
+<tr>
+<td width="510">ggmotif; Lactococcin; Bacteriocin_IIc; 171.2;Plantaricin_F</td>
+</tr>
+<tr>
+<td width="510">P71468_LACPL PlnI (Immunity protein PlnI, membrane-bound protease CAAX family)</td>
+</tr>
+<tr>
+<td width="510">response regulator PlnD</td>
+</tr>
+<tr>
+<td width="510">Response regulator PlnC, activator</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin production related histidine kinase</td>
+</tr>
+<tr>
+<td width="510">Antimicrobial17; Bacteriocin_IIc; 167.2;Plantaricin_A</td>
+</tr>
+<tr>
+<td width="510">P71468_LACPL PlnI (Immunity protein PlnI, membrane-bound protease CAAX family)</td>
+</tr>
+<tr>
+<td width="510">PlnO</td>
+</tr>
+<tr>
+<td width="510">Bacteriocin_IIc; 174.2;Plantaricin_N</td>
+</tr>
+<tr>
+<td width="510">P71462_LACPL Immunity protein PlnM</td>
+</tr>
+<tr>
+<td width="510">172.2;Plantaricin_J</td>
+</tr>
+<tr>
+<td width="510">ComC; Bacteriocin_IIc; 173.2;Plantaricin_K</td>
+</tr>
+<tr>
+<td width="510">Putative bacteriocin Immunity protein</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Tablica 2.</strong> Geni Lactobacillus sojeva izoliranih iz majčinog mlijeka koji kodiraju za<br />
+bakteriocine, tj. za proteine povezane s biosintezom, strukturom i transportom bakteriocina iz<br />
+stanice, te za imunost stanice soja producenta na bakteriocinsko djelovanje.</p>
+<table>
+<tbody>
+<tr>
+<td width="151"><strong>Bakterijski soj</strong></td>
+<td width="450"><strong>Gen</strong></td>
+</tr>
+<tr>
+<td rowspan="23" width="151"><strong><em>Lactiplantibacillus plantarum</em></strong><strong> KR19</strong></td>
+<td width="450"><strong>BIOSINTEZA</strong></td>
+</tr>
+<tr>
+<td width="450">Regulator odziva PlnD</td>
+</tr>
+<tr>
+<td width="450">Regulator odziva PlnC, aktivator</td>
+</tr>
+<tr>
+<td width="450">Histidin kinaza povezana s proizvodnjom bakteriocina</td>
+</tr>
+<tr>
+<td width="450"><strong>STRUKTURNI GENI</strong></td>
+</tr>
+<tr>
+<td width="450">Plantaricin E</td>
+</tr>
+<tr>
+<td width="450">Plantaricin F</td>
+</tr>
+<tr>
+<td width="450">Plantaricin A</td>
+</tr>
+<tr>
+<td width="450">Plantaricin J</td>
+</tr>
+<tr>
+<td width="450">Plantaricin K</td>
+</tr>
+<tr>
+<td width="450">Plantaricin N</td>
+</tr>
+<tr>
+<td width="450">PlnY</td>
+</tr>
+<tr>
+<td width="450">PlnS</td>
+</tr>
+<tr>
+<td width="450">PlnS</td>
+</tr>
+<tr>
+<td width="450">PlnO</td>
+</tr>
+<tr>
+<td width="450"><strong>TRANSPORT</strong></td>
+</tr>
+<tr>
+<td width="450">Pomoćni faktor za ABC transporter PlnH</td>
+</tr>
+<tr>
+<td width="450">ABC-transporter za bakteriocine, ATP-vezujući i permeazni protein PlnG</td>
+</tr>
+<tr>
+<td width="450"><strong>IMUNOST</strong></td>
+</tr>
+<tr>
+<td width="450">Imunosni protein PlnM</td>
+</tr>
+<tr>
+<td width="450">LACPL PlnI (imunosni protein PlnI, proteaza vezana na membranu CAAX obitelj proteina)</td>
+</tr>
+<tr>
+<td width="450">LACPL PlnI (imunosni protein PlnI, proteaza vezana na membranu CAAX obitelj proteina)</td>
+</tr>
+<tr>
+<td width="450">Pretpostavljeni imunosni protein za bakteriocin</td>
+</tr>
+<tr>
+<td rowspan="23" width="151"><strong><em>Lactiplantibacillus plantarum</em></strong><strong> MC19</strong></td>
+<td width="450"><strong>BIOSINTEZA</strong></td>
+</tr>
+<tr>
+<td width="450">Regulator odziva PlnD</td>
+</tr>
+<tr>
+<td width="450">Regulator odziva PlnC, aktivator</td>
+</tr>
+<tr>
+<td width="450">Histidin kinaza povezana s proizvodnjom bakteriocina</td>
+</tr>
+<tr>
+<td width="450"><strong>STRUKTURNI GENI</strong></td>
+</tr>
+<tr>
+<td width="450">Plantaricin E</td>
+</tr>
+<tr>
+<td width="450">Plantaricin F</td>
+</tr>
+<tr>
+<td width="450">Plantaricin A</td>
+</tr>
+<tr>
+<td width="450">Plantaricin J</td>
+</tr>
+<tr>
+<td width="450">Plantaricin K</td>
+</tr>
+<tr>
+<td width="450">Plantaricin N</td>
+</tr>
+<tr>
+<td width="450">PlnY</td>
+</tr>
+<tr>
+<td width="450">PlnS</td>
+</tr>
+<tr>
+<td width="450">PlnS</td>
+</tr>
+<tr>
+<td width="450">PlnO</td>
+</tr>
+<tr>
+<td width="450"><strong>TRANSPORT</strong></td>
+</tr>
+<tr>
+<td width="450">Pomoćni faktor za ABC transporter PlnH</td>
+</tr>
+<tr>
+<td width="450">ABC-transporter za bakteriocine, ATP-vezujući i permeazni protein PlnG</td>
+</tr>
+<tr>
+<td width="450"><strong>IMUNOST</strong></td>
+</tr>
+<tr>
+<td width="450">Imunosni protein PlnM</td>
+</tr>
+<tr>
+<td width="450">LACPL PlnI (imunosni protein PlnI, proteaza vezana na membranu CAAX obitelj proteina)</td>
+</tr>
+<tr>
+<td width="450">LACPL PlnI (imunosni protein PlnI, proteaza vezana na membranu CAAX obitelj proteina)</td>
+</tr>
+<tr>
+<td width="450">Pretpostavljeni imunosni protein za bakteriocin</td>
+</tr>
+</tbody>
+</table>
+			</div></details><details class="archive"><summary>Autohtoni sojevi BMK za proizvodnju sušenog sira</summary><div class="archive-content">
+		<p><strong>Baza autohtonih sojeva bakterija mliječne kiseline (BMK) s definiranim tehnološkim i funkcionalnim svojstvima za proizvodnju sušenog sira</strong></p>
+<p>&nbsp;</p>
+<p>Među brojnim izolatima BMK iz Zbirke mikroorganizama LTAEPSK-a ispitanim u okviru probiotičkog koncepta i starter kultura, odabrana su 4 autohtona soja BMK s poželjnim specifičnim metabolizamskim svojstvima za proizvodnju sušenog sira:</p>
+<ol>
+<li><strong><em>Lactobacillus brevis</em> D6</strong> – sa specifičnim svojstvom ekspresije S-proteina na površini svojih stanica koji imaju zaštitnu ulogu u preživljavanju stanica u nepovoljnim okolišnim uvjetima.</li>
+<li><strong><em>Lactobacillus fermentum</em> D12</strong> – sa specifičnim svojstvom proizvodnje egzopolisaharida koji djeluju kao prebiotici i doprinose reološkim svojstvima sira.</li>
+<li><strong><em>Lactobacillus plantarum</em> D13</strong> – sa specifičnim svojstvom ekspresije bakteriocina koji djeluju antimikrobno prema srodnim Gram-pozitivnim bakterijama, među kojima su i najčešći patogeni podrijetlom iz hrane.</li>
+<li><strong><em>Lactococcus lactis</em> ZG7-10</strong> – sa specifičnom proteolitičkom aktivnošću koja doprinosi aromi sira.</li>
+<li><strong><em>Lactobacillus helveticus</em> M92</strong> – sa specifičnim svojstvom ekspresije S-proteina na površini svojih stanica koji imaju zaštitnu ulogu u preživljavanju stanica u nepovoljnim okolišnim uvjetima</li>
+<li><strong><em>Lactobacillus brevis</em> ZG1</strong> &#8211; sa specifičnim svojstvom ekspresije S-proteina na površini svojih stanica koji imaju zaštitnu ulogu u preživljavanju stanica u nepovoljnim okolišnim uvjetima.</li>
+<li><strong><em>Lactobacillus plantarum</em> M92C</strong> – s bakteriocinskom aktivnošću.</li>
+<li><strong><em>Lactobacillus plantarum</em> ZG1C</strong> – s antimikrobnim djelovanjem</li>
+</ol>
+<p>Pregled odabranih <em>a<em>utohtonih </em></em>sojeva BMK s definiranim tehnološkim i funkcionalnim svojstvima za proizvodnju sušenog sira, prikazan je u Tablici 1.</p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong>Tablica 1. </strong>Sojevi BMK s definiranim tehnološkim i funkcionalnim svojstvima</p>
+<table width="0">
+<tbody>
+<tr>
+<td width="142"><strong>Bakterijski soj</strong></td>
+<td width="143"><strong>Funkcionalno svojstvo</strong></td>
+<td width="145"><strong>Metoda detekcije specifičnog funkcionalnog svojstva</strong></td>
+<td width="243"><strong>Tehnološko svojstvo</strong></td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus brevis</em> D6</td>
+<td width="143">Ekspresija S-proteina</td>
+<td width="145">SDS PAGE, LC-MS analiza proteinske vrpce izrezane iz gela</td>
+<td width="243">Liofiliziran uz dodatak obranog mlijeka kao lioprotektora i mikroinkapsuliran u alginatu</p>
+<p>Funkcionalna starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus ferementum</em> D12</td>
+<td width="143">Proizvodnja egzopolisaharida</td>
+<td width="145"><sup>1</sup>H NMR, SEC, GC, GC/MS, 2D NMR (COSY, TOCSY, NOESY, HSQC)</td>
+<td width="243">Liofiliziran uz dodatak obranog mlijeka kao lioprotektora i mikroinkapsuliran u alginatu</p>
+<p>Funkcionalna starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus plantarum</em> D13</td>
+<td width="143">Ekpresija bakteriocina</td>
+<td width="145">PCR, metoda dvostrukog sloja, združeni uzgoj sa <em>Staphylococcus aureus </em>3048 i <em>Listeria monocytogenes </em>ATCC19111</td>
+<td width="243">Liofiliziran uz dodatak obranog mlijeka kao lioprotektora i mikroinkapsuliran u alginatu</p>
+<p>Funkcionalna starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactococcus lactis</em> ZG7-10</td>
+<td width="143">Proteolitička aktivnost</td>
+<td width="145">Ansonova metoda, Tricine-SDS-PAGE, PCR, LC-MS/MS</td>
+<td width="243">Liofiliziran uz dodatak obranog mlijeka kao lioprotektora i mikroinkapsuliran u alginatu</p>
+<p>Starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus helveticus M92</em></td>
+<td width="143">Ekspresija S-proteina</td>
+<td width="145">SDS PAGE, analiza ekstrahiranih i dijaliziranih  površinskih proteina  primjenom MALDI-TOF i LC-MS analiza proteinske vrpce izrezane iz gela</td>
+<td width="243">Funkcionalna starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus brevis ZG1</em></td>
+<td width="143">Ekspresija S-proteina</td>
+<td width="145">SDS PAGE, analiza ekstrahiranih i dijaliziranih  površinskih proteina  primjenom MALDI-TOF i LC-MS analiza proteinske vrpce izrezane iz gela</td>
+<td width="243">Funkcionalna starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus plantarum</em> M92C</td>
+<td width="143">Ekpresija bakteriocina</td>
+<td width="145">PCR, metoda</td>
+<td width="243">Starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+<tr>
+<td width="142"><em>Lactobacillus plantarum</em> ZG1C</td>
+<td width="143">Antimikrobno djelovanje</td>
+<td width="145">PCR, metoda</td>
+<td width="243">Starter kultura u proizvodnji “sušenog sira” i sirutke</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+			</div></details></div>
+  </div></section>
+  <section class="section" id="radovi"><div class="wrap"><div class="section-head"><div><div class="section-number">05 / Publikacije</div><h2>Znanost u<br>javnom prostoru.</h2></div><p class="lead">Objavljeni radovi i doprinosi istraživačkog tima znanstvenoj zajednici.</p></div><details class="archive"><summary>Prethodno objavljeni znanstveni radovi</summary><div class="archive-content">
+		<p><u>Objavljeni znanstveni radovi:</u></p>
+<ol>
+<li>Uroić, K., Beganović, J., Hynönen, U., Pietilä, T. E., Leboš Pavunc, A., Kant, R., Kos, B., Palva, A., Šušković, J. (2016) The role of S-layer in adhesive and immunological properties of probiotic starter culture <em>Lactobacillus brevis </em>D6 isolated from artisanal smoked fresh cheese. <em>LWT &#8211; Food Sci. Technol.</em> <strong>69</strong>: 623-632. http://www.sciencedirect.com/science/article/pii/S0023643816300901</li>
+<li>Ravi Kant, Ksenija Uroić, Ulla Hynonen, Blaženka Kos, Jagoda Šušković, Airi Palva (2016) The genomes of <em>Lactobacillus brevis </em>D6 strain isolated from smoked fresh cheese. <em>GenomeA</em>, <strong>4 </strong>(2) http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4824270/</li>
+<li>M. Banić, K. Uroić, A. Leboš Pavunc, J. Novak, K. Zorić, K. Durgo, H. Petković, P. Jamnik, S. Kazazić, S. Kazazić, S. Radović, S. Scalabrin, U. Hynӧnen, J. Šušković, B. Kos (2018) Characterization of S-layer proteins of probiotic starter culture Lactobacillus brevis SF9B isolated from sauerkraut, LWT &#8211; Food Science and Technology 93: 257-267. https://www.sciencedirect.com/science/article/pii/S0023643818302780</li>
+<li>Leboš Pavunc, A., Penava, L., Ranilović, J., Novak, J., Banić, M., Butorac, K., Petrović, E.,Mihaljević-Herman, V., Bendelja, K., Savić Mlakar, A., Durgo, K., Kos, B., Šušković, J. (2019).Influence of Dehydrated Wheat/Rice Cereal Matrices on probiotic activity of Bifidobacterium animalis subsp. lactis BB-12® Food Technol. Biotech. 57 (2), 147-158.<br />
+https://www.ncbi.nlm.nih.gov/pubmed/31537964</li>
+<li>K. Butorac, M. Banić, J. Novak, A. Leboš Pavunc, K. Uroić, K. Durgo, N. Oršolić, M. Kukolj, S. Radović, S. Scalabrin, J. Žučko, A. Starčević, J. Šušković, B. Kos (2020) The functional capacity of plantaricin-producing Lactobacillus plantarum SF9C and S-layer-carrying Lactobacillus brevis SF9B to withstand gastrointestinal transit, Microbial Cell Factories 19:106. <a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-020-01365-6" target="_blank">https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-020-01365-6</a></li>
+<li>Butorac, K., Novak, J., Bellich, B., Teran, L. C., Banić, M., Leboš Pavunc, A., Zjalić, S., Cescutti, P., Šušković, J., Kos, B. (2021) Lyophilized alginate-based microspheres containing Lactobacillus fermentum D12, an exopolysaccharides producer, contribute to the strain’s functionality in vitro. Microbial Cell Factories 20 (1), 85. (Q1; IF 5.588) <a href="https://link.springer.com/article/10.1186/s12934-021-01575-6">https://link.springer.com/article/10.1186/s12934-021-01575-6</a></li>
+<li>Novak, J., Butorac, K., Leboš Pavunc, A., Banić, M., Butorac, A., Lepur, A., Oršolić, N., Tonković, K., Bendelja, K., Čuljak, N., Lovrić M., Šušković, J. &amp; Kos, B. (2022). A Lactic Acid Bacteria Consortium Impacted the Content of Casein-Derived Biopeptides in Dried Fresh Cheese. Molecules, 27(1), 160. 1-19. (Q1; IF 4.412) <a href="https://www.mdpi.com/1420-3049/27/1/160">https://www.mdpi.com/1420-3049/27/1/160</a></li>
+<li>Novak, J., Leboš Pavunc, A., Butorac, K., Banić, M., Čuljak, N., Rak, H., Blažević, M., Iveljić, A.M., Šušković, J. &amp; Kos, B. (2022) Caseinolytic proteases of Lactobacillus and Lactococcus strains isolated from fermented dairy products. Mljekarstvo: časopis za unaprjeđenje proizvodnje i prerade mlijeka, 72(1), 11-21. (IF 1,016) <a href="https://hrcak.srce.hr/clanak/399808">https://hrcak.srce.hr/clanak/399808</a></li>
+<li>Banić, M., Butorac, K., Čuljak, N., Leboš Pavunc, A., Novak, J., Bellich, B., Kazazić,<br />
+S., Kazazić, S., Cescutti, P., Šušković, J., Zucko, J.  &amp;amp; Kos, B. (2022) The Human<br />
+Milk Microbiota Produces Potential Therapeutic Biomolecules and Shapes the<br />
+Intestinal Microbiota of Infants. International Journal of Molecular Sciences, 23,<br />
+14382, 22. (Q1; IF 6.208) https://www.mdpi.com/1422-0067/23/22/14382</li>
+<li>Leboš Pavunc, A., Penava, L., Čuljak, N., Banić, M., Novak, J., Butorac, K.,<br />
+Ceilinger, M., Miličević, J., Čukelj, D., Šušković, J., Kos, B. (2023) Evaluation of the<br />
+Probiotic Properties of Lacticaseibacillus casei 431 Isolated from Food for Special<br />
+Medical Purposes. Food Technology and Biotechnology, 63.<b></b> (4) 418-429.<br />
+6117113/ftb.61.04.23.8045.</li>
+<li>Butorac, K.; Novak, J.; Banić, M.; Leboš Pavunc, A.; Čuljak, N.; Oršolić, N.; Odeh,<br />
+D.; Perica, J.; Šušković, J.; Kos, B. (2023) Modulation of the Gut Microbiota by the<br />
+Plantaricin-Producing Lactiplantibacillus plantarum D13, Analysed in the DSS-<br />
+Induced Colitis Mouse Model, International Journal of Molecular Sciences 24,<br />
+15322. (Q1; IF 6.208) https://doi.org/10.3390/ijms242015322</li>
+<li>Leboš Pavunc, A., Novak, J., Banić, M., Butorac, K., Čuljak, N., Šušković, J., Kos, B. (2023) Mikro- i nanoinkapsulacija nove generacija probiotika i postbiotika. Zbornik radova s 15. stručnog skupa „Funkcionalna hrana u Hrvatskoj“, 30-34.</li>
+<li>Banić, M.; Butorac, K.; Čuljak, N.; Butorac, A.; Novak, J.; Pavunc, A.L.; Rušanac, A.; Stanečić, Ž.; Lovrić, M.; Šušković, J.; Kos, B. (2024) An Integrated Comprehensive Peptidomics and In Silico Analysis of Bioactive Peptide-Rich Milk Fermented by Three Autochthonous Cocci Strains. <em>International Journal of Molecular Sciences</em> 25, 2431. (Q1; IF 5.6) <a href="https://doi.org/10.3390/ijms25042431" data-saferedirecturl="https://www.google.com/url?q=https://doi.org/10.3390/ijms25042431&amp;source=gmail&amp;ust=1710334379803000&amp;usg=AOvVaw3xOOjCtxx8nGQ9GU4WplW2">https://doi.org/10.3390/ijms25042431</a> <strong><br />
+</strong></li>
+<li>Čuljak, N., Leboš Pavunc, A., Dučkić, K., Butorac, K., Banić, M., Novak, J., Šušković, J., Kos, B. (2024) Functionality and protective effect of S-layer proteins in microencapsulated freeze-dried probiotic <em>Levilactobacillus brevis </em> <em>Mljekarstvo</em>, <strong>74</strong>(3), 208-218. (Q4; IF=1.2) <a href="https://doi.org/10.15567/mljekarstvo.2024.0304">https://doi.org/10.15567/mljekarstvo.2024.0304</a></li>
+<li>Čuljak, N., Bellich, B., Pedron, A., Butorac, K., Leboš Pavunc, A., Novak, J., Banić, M., Šušković, J., Cescutti, P., Kos, B. (2024) <em>Limosilactobacillus fermentum</em> strains MC1 and D12: functional properties and exopolysaccharides characterization. <em> J. Biol. Macromol.</em> <strong>273</strong>, 133215. (Q1; IF=7.7) <a href="https://doi.org/10.1016/j.ijbiomac.2024.133215">https://doi.org/10.1016/j.ijbiomac.2024.133215</a></li>
+<li>Banić, M., Butorac, K., Čuljak, N., Novak, J., Pavunc, A. L., Nejašmić, D., Zovko Lj., Tonković K., Šušković, J., Kos, B. (2025). A comparative HS-SPME-GC–MS-based volatile fingerprint analysis of newly developed milk beverages fermented with autochthonous and commercial cultures. Food Chemistry, 144845. Q1 <a href="https://doi.org/10.1016/j.foodchem.2025.144845">https://doi.org/10.1016/j.foodchem.2025.144845</a></li>
+<li>Čuljak, N., Bendelja, K., Pavunc, A. L., Butorac, K., Banić, M., Mlakar, A. S., Cvetić Ž, Hrsan J, Novak J, Šušković J, Kos, B. (2025). In Vitro Analysis of Probiotic Properties Related to the Adaptation of Levilactobacillus brevis to Intestinal Microenvironment and Involvement of S-Layer Proteins. International Journal of Molecular Sciences, 26(6), 2425. Q1 <a href="https://doi.org/10.3390/ijms26062425">https://doi.org/10.3390/ijms26062425</a></li>
+<li>Jasna Novak, J., Leboš Pavunc, A., Banić, M., Butorac, K., Šušković, J., Kos, B. (2025) Pre, pro i post-biotici &#8211; ključne bioaktivne komponente funkcionalne hrane za crijevni mikrobiom. Funkcionalna hrana u Hrvatskoj, 12-14.</li>
+<li>Butorac, K., Banić, M., Zucko, J., Leboš Pavunc, A., Novak, J., Jerić, I., Balog, T., Kralj, M., Penava, L., Ceilinger, M., Šušković, J., Kos, B. (2025) Modulation of the Gut Microbiota of Diabetes-Induced Mice Through Curcumin-Enriched Dietary Fibers Intervention. Molecular Nutrition &amp;amp; Food Research, 69(23), 0:e70350. Q1 <a href="https://doi.org/10.1002/mnfr.70350">https://doi.org/10.1002/mnfr.70350</a></li>
+</ol>
+			</div></details><h3>Noviji znanstveni radovi</h3><ol class="list"><li>Radović, Mia; Grgić, Tomislava; Banić, Martina; Butorac, Katarina; Leboš Pavunc, Andreja; Šušković, Jagoda; Novak, Jasna; Kos, Blaženka, Genomic Insights and Inactivation Strategies for Lactiplantibacillus plantarum Postbiotics Production // Foods, 15 (2026), 12; 2148-2148. Q1 doi: <a href="https://doi.org/10.3390/foods15122148">10.3390/foods15122148</a></li><li>Banić, Martina; Butorac, Ana; Butorac, Katarina; Kos, Blaženka; Leboš Pavunc, Andreja; Šušković, Jagoda; Novak, Jasna, Integrative Insights Into Bioactive Peptides in Milk Fermented With Autochthonous and Commercial Cultures Using High‐Throughput Peptidomics and Machine Learning // Food frontiers, 7 (2026), 3; e70279, 14. Q1 doi: <a href="https://doi.org/10.1002/fft2.70279">10.1002/fft2.70279</a></li><li>Čuljak, Nina; Oršolić, Nada; Odeh, Dyana; Leboš Pavunc, Andreja; Butorac, Katarina; Banić, Martina; Novak, Jasna; Šešelja, Kate; Baus Lončar, Mirela; Ramić, Snježana Jurkin, Tanja; Šušković, Jagoda; Kos, Blaženka, In Vivo Evaluation of the Effect of Limosilactobacillus fermentum MC1 and Its EPSs on the Microbiota and Inflammatory Processes in the Mouse Intestine // International journal of molecular sciences, 27 (2026), 5; 2321, 22. Q1 doi: <a href="https://doi.org/10.3390/ijms27052321">10.3390/ijms27052321</a></li><li>Butorac, Katarina; Banić, Martina; El Khalifa, Dina; Habuš, Ena; Čuljak, Nina; Leboš Pavunc, Andreja; Novak, Jasna; Šušković, Jagoda; Kos, Blaženka, Autochthonous Human Milk Lactobacilli Strains as Potential Probiotic Starter Cultures // Food technology and biotechnology, 64 (2026), 1; 20-29. Q3 doi: <a href="https://doi.org/10.17113/ftb.64.01.26.9074">10.17113/ftb.64.01.26.9074</a></li></ol></div></section>
+  <section class="section white" id="dogadanja"><div class="wrap"><div class="section-head"><div><div class="section-number">06 / Aktivnosti</div><h2>Susreti i<br>razmjena znanja.</h2></div><p class="lead">Od znanstvenih skupova do radionica i predavanja — dijelimo istraživanja s kolegama i širom javnošću.</p></div><div class="two-col"><div><h3>Sudjelovanja na znanstvenim skupovima</h3><details class="archive"><summary>Prethodna sudjelovanja na skupovima</summary><div class="archive-content">
+		<p><u>Sudjelovanja na znanstvenim skupovima:</u></p>
+<ul>
+<li>Ksenija Uroić, Martina Marijanović, Ksenija Durgo, Jasna Novak, Andreja Leboš Pavunc, Blaženka Kos, Jagoda Šušković. Adhesion properties of probiotic S-layer-expressing<em> Lactobacillus</em> strains. The 3<sup>rd</sup> Microbiome R&amp;D and Business Collaboration Forum: Europe. London, UK, 10.-11. travnja 2016. (poster)</li>
+<li>Ksenija Uroić, Blaženka Kos, Jasna Novak, Andreja Leboš-Pavunc, Martina Marijanović, Jagoda Šušković. Probiotičke bakterije – prijateljsko lice primjenjene mikrobiologije. Festival znanosti. Zagreb i Varaždin, Hrvatska, 18.-24. travnja 2016. (usmeno priopćenje)</li>
+<li>Ksenija Uroić, Martina Marijanović, Ksenija Durgo, Jasna Novak, Andreja Leboš Pavunc, Blaženka Kos, Jagoda Šušković. S-layer proteins and bacteriocins of probiotic strain <em>Lactobacillus brevis</em> ZG1. 6th Croatian Congress of Microbiology. Sv. Martin na Muri, Hrvatska, 15.-18. lipnja 2016. (usmeno priopćenje)</li>
+<li>Martina Marijanović, Ksenija Uroić, Ksenija Durgo, Jasna Novak, Andreja Leboš Pavunc, Katarina Zorić, Jagoda Šušković, Blaženka Kos. S-layer-expressing <em>Lactobacillus</em> strains in competitive exclusion of pathogens. Microbiota incognita, Krk, 26. &#8211; 28. rujna 2016. (poster)</li>
+<li>Ksenija Uroić, Polona Jamnik, Martina Marijanović, Jasna Novak, Andreja Leboš Pavunc, Saša Kazazić, Snježana  Kazazić, Hrvoje Petković, Jagoda Šušković, Blaženka Kos. Surface proteins of probiotic strain <em>Lactobacillus paraplantarum</em> SF9B: Effect of simulated conditions of the gastrointestinal tract. Power of Microbes, Krk, 28. rujna &#8211; 01. listopada 2016. (poster)</li>
+<li>Ksenija Uroić, Martina Marijanović, Jasna Novak, Andreja Leboš Pavunc, Ksenija Durgo, Bojana Bogovič Matijašić, Blaženka Kos, Jagoda Šušković. Probiotički potenicijal autohtone mikrobiote sušenih i dimljenih svježih sireva. 42. simpozij mljekarskih stručnjaka s međunarodnim sudjelovanjem, Lovran, Hrvatska, 9.-12.11.2016. (poster)</li>
+<li>M. Banić, K. Zorić, A. Leboš Pavunc, K. Uroić, J. Novak, B. Kos, J. Šušković, Probiotics and starter cultures &#8211; surface proteins and bacteriocins, European Summit of Industrial Biotechnology 2017, 14-16. 11. 2017., Austrian-Croatian Science Day 15. 11. 2017. Graz, Austria. (organizator: The Austrian Centre of Industrial Biotechnology and partners) (poster)</li>
+<li>K. Zorić, M. Banić, A. Leboš Pavunc, K. Uroić, J. Novak, B. Kos, J. Šušković, Primjena protektivnih matriksa i metoda za proizvodnju probiotičkih bakterija, 15. Međunarodna izložba inovacija ARCA 2017. i 9. Međunarodni sajam inovacija u poljoprivredi, prehrambenoj industriji i poljoprivrednoj mehanizaciji, Nacionalna i sveučilišna knjižnica u Zagrebu, 19. do 21. listopad 2017. (poster) <strong>Srebrna medalja AgroARCA za prezentirane rezultate</strong></li>
+<li>B. Kos, Važnost kontrole rezidua antibiotika u hrani &#8211; smanjenje antibiotičke rezistencije, Interdisciplinarni znanstveno-stručni simpozij povodom Europskog dana svjesnosti o antibioticima i Svjetskog tjedna svjesnosti o antibioticima „Jedno zdravstvo = jedna znanost“, 18. studenoga 2017., Zagreb (pozvano predavanje)</li>
+<li>Tina Vidulin, Angelo Gale, Lea Iličić, Anita Pušek, Tihana Martinuš, Brigita Herout, Tino Ursić, Katarina Zorić, Paola Cesutti, Barbara Bellich, Martina Banić, Andreja Leboš Pavunc, Jagoda Šušković, Jasna Novak, Blaženka Kos, Biotehnološka proizvodnja liofiliziranog mikroinkapsuliranog probiotičkog soja <em>Lactobacillus fermentum</em> D12 – producenta egzopolisaharida,  Kongres studenata Biotehnologije, 25. do 27. 05. 2018. Zagreb (poster) <strong>Osvojena nagrada za najbolji poster</strong></li>
+<li>Blaženka Kos, Katarina Zorić, Martina Banić, Andreja Leboš Pavunc, Ksenija Uroić, Jasna Novak, Jagoda Šušković, S-layer proteins and bacteriocins in probiotics as living drugs – impact on microbiota, 8th World Congress on Biopolymers &amp; Bioplastics, June 28-29, 2018 Berlin, Germany (pozvano predavanje)</li>
+<li>Katarina Zorić, Blaženka Kos, Martina Banić, Ksenija Uroić, Andreja Leboš Pavunc, Jasna Novak, Ksenija Durgo, Hrvoje Petković, Polona Jamnik, Saša Kazazić, Snježana Kazazić, Slobodanka Radović, Simone Scalabrin, Ulla Hynӧnen, Jagoda Šušković, The role of S-layer proteins as one of the most abundant biopolymers on Earth in probiotic properties of bacterial strain <em>Lactobacillus brevis</em> SF9B, 8th World Congress on Biopolymers &amp; Bioplastics, June 28-29, 2018 Berlin, Germany (poster)</li>
+<li>Katarina Zorić, Martina Banić, Ksenija Uroić, Andreja Leboš Pavunc, Jasna Novak, Ksenija Durgo, Nada Oršolić, Marina Kukolj, Hrvoje Petković, Polona Jamnik, Saša Kazazić, Snježana Kazazić, Slobodanka Radović, Simone Scalabrin, Jagoda Šušković, Blaženka Kos, Combined probiotic effect of S-layer-carrying <em>Lactobacillus brevis</em> SF9B and bacteriocin-expressing <em>Lactobacillus plantarum</em> SF9C strains on faecal microbiota of rats, 9<sup>th</sup> International Congress of Food Technologists, Biotechnologists and Nutritionists (PBN Congress), sekcija Vera Johanides, 03.-05. listopada, 2018., Zagreb, Hrvatska (predavanje)</li>
+<li>Katarina Butorac, Paola Cescutti, Barbara Bellich, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Slaven Zjalić, Jagoda Šušković, Blaženka Kos, Characterization of exopolysaccharides (EPOLs) produced by probiotic starter culture <em>Lactobacillus fermentum</em> D12. Simpozij PhD studenata studija biotehnologije, prehrambene tehnologije i nutricionizma (Sveučilišta u Wageningenu (WUR), Sveučilišta BOKU, Sveučilišta u Zagrebu (SuZG)). 23. listopad 2018., BOKU, Sveučilište u Beču, Austrija (poster)</li>
+<li>Katarina Zorić, Martina Banić, Tina Vidulin, Katarina Tonković, Andreja Leboš Pavunc, Jasna Novak, Ksenija Uroić, Saša Kazazić, Snježana Kazazić, Slobodanka Radović, Simone Scalabrin, Paola Cescutti, Barbara Bellich, Ljerka Gregurek, Jagoda Šušković, Blaženka Kos, Odabir autohtonih starter kultura sa specifičnim metabolizamskim svojstvima za proizvodnju dimljenog sira, 43. Hrvatski simpozij mljekarskih stručnjaka s međunarodnim sudjelovanjem, 7.-10. studenog 2018., Lovran, Hrvatska (poster)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Ksenija Uroić, Katarina Zorić, Martina Banić, Nada Oršolić, Saša Kazazić, Snježana Kazazić, Slobodanka Radović, Simone Scalabrin, Paola Cescutti, Barbara Bellich, Tradicionalno proizvedeni fermentirani mliječni proizvodi kao bogat izvor korisnih bakterija s pozitivnim utjecajem na zdravlje čovjeka, 43. Hrvatski simpozij mljekarskih stručnjaka s međunarodnim sudjelovanjem, 7.-10. studenog 2018., Lovran, Hrvatska (pozvano predavanje)</li>
+<li>Katarina Butorac, Paola Cescutti, Barbara Bellich, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Slaven Zjalić, Jagoda Šušković, Blaženka Kos, Karakterizacija egzopolisaharida autohtonog probiotičkog soja <em>Lactobacillus fermentum</em> D12, Dan doktorskog studija Biotehnologija i bioprocesno inženjerstvo, prehrambena tehnologija i nutricionizam Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu u organizaciji Odbora za poslijediplomske studije PBF-a, 15. veljače, 2019., Zagreb, Hrvatska (predavanje)</li>
+<li>Katarina Butorac, Paola Cescutti, Barbara Bellich, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Slaven Zjalić, Jagoda Šušković, Blaženka Kos, Functional role of exopolysaccharides biosynthesized by <em>Lactobacillus fermentum</em> D12 in strain´s probiotic activity, Power of Microbes in Industry and Environment 2019, 15.-18.svibnja 2019., Sveti Martin na Muri, Hrvatska (poster)</li>
+<li>Andreja Leboš Pavunc, Lenkica Penava, Lenkica, Jasmina Ranilović, Jasna Novak, Martina Banić, Katarina Butorac, Emilija Petrović, Vesna Mihaljević-Herman, Krešo Bendelja, Ana Savić Mlakar, Ksenija Durgo, Blaženka Kos, Jagoda Šušković, Probiotic activity of <em>Bifidobacterium animalis</em> subsp. <em>lactis</em> BB-12® in dehydrated wheat/rice cereal products. Power of Microbes in  Industry and Environment 2019, 15.-18. svibnja 2019., Sveti Martin na Muri, Hrvatska (poster)</li>
+<li>Katarina Butorac, Barbara Bellich, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Ksenija Durgo, Paola Cescutti, Roberto Rizzo, Slaven Zjalić, Jagoda Šušković, Blaženka Kos, Structural characterisation of the novel exopolysaccharide biosynthesised by potential probiotic strain <em>Lactobacillus fermentum</em> D12, 1<sup>st</sup> International Meeting One Health in Zadar, Global approach to Global Health. 03. lipnja, 2019. Zadar, Hrvatska  (poster)</li>
+<li>Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Katarina Butorac, Jurica Žučko, Jagoda Šušković, Blaženka Kos, Lactic acid bacteria isolated from mother’s milk as a potential next-generation probiotics, FEMS Online Conference on Microbiology, 28.-31.10.2020.</li>
+<li>Katarina Butorac, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Paola Cescutti, Barbara Bellich, Katarina Tonković, Ljerka Gregurek, Slaven Zjalić, Jagoda Šušković, Blaženka Kos, Application of exopolysaccharides (EPSs) producer strain, Lactobacillus fermentum D12, as probiotic starter culture. 12th International Scientific and Professional Concerence. With Food to Health. Osijek, Hrvatska, 24.-25.10.2019.</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac, Martina Banić, Nina Čuljak, Probiotici druge generacije i postbiotici – utjecaj na crijevnu mikrobiotu, Mozak voli zdravo, on-line, 27.03.2021. (pozvano predavanje)</li>
+<li>Nina Čuljak, Martina Banić, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Saša Kazazić, Snježana Kazazić, Paola Cescutti, Barbara Bellich, Jagoda Šušković, Blaženka Kos. Potential therapeutic biomolecules of Lactobacillus strains isolated from human milk microbiota. 11th Probiotics, Prebiotics &amp; New Foods, Nutraceuticals and Botanicals for Nutrition &amp; Human and Microbiota Health, 2nd Science &amp; Business Symposium, Universita Urbaniana, Rim, Italija, 12.-14.09.2021. (poster)</li>
+<li>Nina Čuljak, Martina Banić, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Ksenija Durgo, Jagoda Šušković, Blaženka Kos. Funkcionalna uloga S-proteina probiotičkih Levilactobacillus brevis sojeva izoliranih iz majčinog mlijeka. Dan doktorata biotehničkog područja 2021., Agronomski fakultet Sveučilišta u Zagrebu, Hrvatska, 16.-17.09.2021. (poster)</li>
+<li>Martina Banić, Nina Čuljak, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Jagoda Šušković, Blaženka Kos. Lactobacillus sojevi izolirani iz majčinog mlijeka &#8211; bogat izvor potencijalnih terapijskih biomolekula. Dan doktorata biotehničkog područja 2021., Agronomski fakultet Sveučilišta u Zagrebu, Hrvatska, 16.-17.09.2021. (poster)</li>
+<li>Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Katarina Butorac, Nina Čuljak, Jurica Žučko, Jagoda Šušković, Blaženka Kos. The impact of breastfeeding on the composition of the infant faecal microbiome. 13. međunarodni znanstveno-stručni skup „Hranom do zdravlja“, Osijek, Hrvatska, 16.-17.09.2021. (poster)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Jurica Žućko, Martina Banić, Katarina Butorac, Nina Čuljak. Probiotics: from mother&#8217;s milk microbiota to novel food supplements and live biotherapeutics. 13. međunarodni znanstveno-stručni skup „Hranom do zdravlja“, Osijek, Hrvatska, 16.-17.09.2021. (plenarno predavanje)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak, Biomolekule sljedeće generacije probiotika &#8211; novi lijekovi za crijevnu mikrobiotu, 3. interdisciplinarni studentski simpozij , Prehrambeno-biotehnološki fakultet Sveučilišta u Zagrebu, Studnetska udruga PROBION, 2.- 3. travnja 2022. (pozvano predavanje)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak, Humana mikrobiota i zdravlje, 7. SiSB – Simpozij studenata bioloških usmjerenja, Prirodoslovno-matematički fakultet Sveučilišta u Zagrebu, 21. i 22. svibnja 2022. (pozvano predavanje)</li>
+<li>Katarina Butorac, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Nina Čuljak, Saša Kazazić, Snježana Kazazić, Jagoda Šušković, Blaženka Kos. The role of S-layer proteins in probiotic properties of Levilactobacillus brevis strains isolated from mother’s milk microbiota. 7th Croatian Congress of Microbiology with International Participation, Sveti Martin na Muri, Hrvatska, 24.-27.05.2022. (poster)</li>
+<li>Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak, Jagoda Šušković, Blaženka Kos, Pro/post-biotics as biomodulators of the intestinal microbiome 7th Croatian Congress of Microbiology with International Participation, Sveti Martin na Muri, Hrvatska, 24.-27.05.2022. (pozvano predavanje)</li>
+<li>Nina Čuljak, Martina Banić, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Jagoda Šušković, Blaženka Kos. Potencijalne terapijske biomolekule probiotika kao živih lijekova. Dani doktorata biotehničkog područja 2022., Sveučilište u Zagrebu Prehrambeno-biotehnološki fakultet, Zagreb, Hrvatska, 28.-29.09.2022. (poster)</li>
+<li>Katarina Butorac, Jasna Novak, Andreja Leboš Pavunc, Nina Čuljak, Martina Banić, Blaženka Kos, Jagoda Šušković, Paola Cescutti, Barbara Bellich. Bakteriocini, biopeptidi i egzopolisaharidi probiotičkih sojeva bakterija mliječne kiseline. Dani doktorata biotehničkog područja 2022, Sveučilište u Zagrebu Prehrambeno-biotehnološki fakultet, Zagreb, Hrvatska, 28.-29.09.2022. (usmeno izlaganje)</li>
+<li>Nina Čuljak, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Paola Cescutti, Barbara Bellich, Krešo Bendelja, Ksenija Durgo, Jagoda Šušković, Blaženka Kos. Characterization of <em>Limosilactobacillus fermentum</em> MC1, the exopolysaccharide-producing strain of human milk microbiota. 11th Central European Congress on Food and Nutrition, Čatež, Slovenija, 27.-30.09.2022. (poster)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Next-generation probiotics and prebiotics – an efficient strategy for balancing the human microbiota. 11th Central European Congress on Food and Nutrition, Čatež, Slovenija, 27.-30.09.2022. (pozvano predavanje)</li>
+<li>Nina Čuljak, Barbara Bellich, Paola Cescutti, Katarina Butorac, Jasna Novak, Martina Banić, Andreja Leboš Pavunc, Krešo Bendelja, Ksenija Durgo, Jagoda Šušković, Blaženka Kos. Structural and functional characterization of exopolysaccharides produced by <em>Limosilactobacillus fermentum</em> MC1 isolated from mother’s milk. 10th International Congress of Food Technologists, Biotechnologists and Nutritionists. Zagreb, Hrvatska, 30.11.-02.12.2022. (usmeno izlaganje)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac, Martina Banić, Nada Oršolić, Dyana Odeh, Ana Butorac, Adriana Lepur, Krešo Bendelja, Ana Savić Mlakar, Paola Cesutti, Barbara Bellich. Functional biomolecules of lactic acid bacteria. 44th International Dairy Experts Symposium, Rovinj, Hrvatska, 12.-15.10.2022. (plenarno predavanje)</li>
+<li>Katarina Butorac, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Katarina Tonković, Katarina Brajković, Ana Butorac, Marija Lovrić, Jagoda Šušković, Blaženka Kos. Development of an innovative functional whey-based beverage with bioactive peptides. 44th International Dairy Experts Symposium, Rovinj, Hrvatska, 12.-15.10.2022. (poster)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Bugs as drugs – the impact on the gut microbiota-brain axis. International Biomedical Symposium Tuzla Brain Week 2023, 17.-19.03.2023. (on-line predavanje)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Humani mikrobiom i zdravlje &#8211; učinak biomolekula sljedeće generacije probiotika. 4. interdisciplinarni studentski simpozij, Prehrambeno-biotehnološki fakultet Sveučilišta u Zagrebu, Studentska udruga PROBION, 20.- 21. 05.2023. (pozvano predavanje)</li>
+<li>Katarina Butorac, Jasna Novak, Martina Banić, Andreja Leboš Pavunc, Nina Čuljak, Jagoda Šušković, Blaženka Kos. Plantaricin-based antibacterial activity of <em>Lactiplantibacillus plantarum</em> D13 and SF15C strains originating from different food microbiomes. Power of Microbes in Industry and Environment 2023, Poreč, Hrvatska, 15.-18.05.2023. (poster)</li>
+<li>Nina Čuljak, Martina Banić, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Jagoda Šušković, Blaženka Kos. Odabir i karakterizacija sojeva bakterija mliječne kiseline sa specifičnim svojstvom proizvodnje potencijalnih terapijskih biomolekula. Dani doktorata biotehničkog područja 2023, Sveučilište u Zagrebu Fakultet šumarstva i drvne tehnologije, Zagreb, Hrvatska, 14.-15.09.2023. (usmeno izlaganje)</li>
+<li>Katarina Butorac, Nina Čuljak, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Jagoda Šušković, Blaženka Kos. Optimization of microencapsulation of <em>Lactiplantibacillus plantarum</em> MB18 for improved gastrointestinal delivery of probiotic. 14. međunarodni znanstveno-stručni skup „Hranom do zdravlja“, Osijek, Hrvatska, 14.-15.09.2023. (poster)</li>
+<li>Andreja Leboš Pavunc, Jasna Novak, Martina Banić, Katarina Butorac, Nina Čuljak, Jagoda Šušković, Blaženka Kos. Mikro- i nanoinkapsulacija nove generacija probiotika i postbiotika. 15. stručni skup Funkcionalna hrana u Hrvatskoj, Zagreb, Hrvatska, 05.10.2023. (predavanje)</li>
+<li>Nina Čuljak, Andreja Leboš Pavunc, Jasna Novak, Katarina Butorac, Martina Banić, Tanja Jurkin, Jagoda Šušković, Blaženka Kos. Encapsulation of EPS-producing <em>Limosilactobacillus fermentum</em> strains for improved functional properties. European Biotechnology Congress 2023, Ljubljana, Slovenija, 04.-06.10.2023. (poster)</li>
+<li>Nina Čuljak, Andreja Leboš Pavunc, Katarina Butorac, Martina Banić, Jasna Novak, Tanja Jurkin, Jagoda Šušković, Blaženka Kos. Targeted micro- and nanoencapsulation of S-layer producing strains of <em>Limosilactobacillus brevis</em> for enhanced protection during gut delivery or freeze-drying. 37th EFFoST International Conference 2023, Valencija, Španjolska, 06.-08.11.2023. (poster)</li>
+<li>Andreja Leboš Pavunc. Biotehnološka proizvodnja probiotika kao živih lijekova. 4. simpozij SUVREMENI ZNAČAJ CRIJEVNE MIKROBIOTE, Pula, Hrvatska, 15.-17.03.2024. (predavanje)</li>
+<li>Jasna Novak. Druga generacija probiotika. 4. simpozij SUVREMENI ZNAČAJ CRIJEVNE MIKROBIOTE, Pula, Hrvatska, 15.-17.03.2024. (predavanje)</li>
+<li>Katarina Butorac, Lenkica Penava, Andreja Leboš Pavunc, Martina Banić, Nina Čuljak, Jasna Novak, Marijana Ceilinger, Jelena Miličević, Ivanka Jerić, Jagoda Šušković, Blaženka Kos. Prebiotic effect of by-products dietary fibers formulated for foods for special medical purposes. 4. međunarodni znanstveno-stručni skup Food Industry By-Products, Osijek, Hrvatska, 06.-07.06.2024. (poster)</li>
+<li>Katarina Butorac, Martina Banić, Andreja Leboš Pavunc, Jasna Novak, Katarina Tonković, Ana Butorac, Marija Lovrić, Jagoda Šušković, Blaženka Kos. Whey-based functional beverage and freeze-dried formulation rich in bioactive peptides. 4. međunarodni znanstveno-stručni skup Food Industry By-Products, Osijek, Hrvatska, 06.-07.06.2024. (poster)</li>
+<li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Biotechnology in circular economy – lab-grown food of animal and plant origin. 4. međunarodni znanstveno-stručni skup Food Industry By-Products, Osijek, Hrvatska, 06.-07.06.2024. (predavanje)</li>
+<li>Čuljak Nina, Leboš Pavunc Andreja, Banić Martina, Butorac Katarina, Oršolić Nada, Odeh Dyana, Novak Jasna, Šušković Jagoda, Kos Blaženka. The effect of <em>L. fermentum</em> MC1 and its exopolysaccharides on the gut microbiome and immune system of mice with induced colitis. Dani doktorata biotehničkog područja, Zagreb, Hrvatska, 12.-13.09.2024. (poster)</li>
+<li>Butorac, Katarina, Banić, Martina, Čuljak, Nina, Leboš Pavunc, Andreja, Novak, Jasna, Šušković, Jagoda, Vidaković, Silvija, Kos, Blaženka. Proizvodnja fermentiranih probiotičkih pripravaka primjenom nusproizvoda mliječne industrije. 45. međunarodni simpozij mljekarskih stručnjaka, Rovinj, Hrvatska, 13.-16.11.2024. Zbornik sažetaka Volarić, Vera, Božanić, Rajka (ur.)  Zagreb: Hrvatska Mljekarska Udruga, 2024. str. 86-86. (poster)</li>
+<li>Novak, Jasna, Leboš Pavunc, Andreja, Banić, Martina, Butorac, Katarina, Čuljak, Nina, Šušković, Jagoda, Kos, Blaženka. Redefining the gut microbiome through biomodulators. 9th International Congress of Nutritionists Zagreb, Hrvatska, 21.-23.11.2024. (plenarno predavanje)</li>
+<li>Leboš Pavunc, Andreja, Čuljak, Nina, Butorac, Katarina, Banić, Martina, Novak, Jasna, Šušković, Jagoda, Kos, Blaženka. Use of by-products in the production of new generation encapsulated probiotics međunarodni kongres Natural Resources, Green Technology, and Sustainable Development/5-GREEN202, Zagreb, Hrvatska, 03.-05.12.2024. (pozvano predavanje)</li>
+<li>Novak, Jasna: Druga generacija probiotika, 4. simpozij Suvremeni značaj crijevne mikrobiote, Pula, Hrvatska, 15. &#8211; 17. ožujka 2024. (usmeno priopćenje)</li>
+<li>Leboš Pavunc, Andreja: Biotehnološka proizvodnja probiotika kao živih lijekova, Pula, Hrvatska, 15. &#8211; 17. ožujka 2024. (usmeno priopćenje)</li>
+<li>Čuljak Nina, Leboš Pavunc Andreja, Banić Martina, Butorac Katarina, Oršolić Nada, Odeh Dyana, Novak Jasna, Šušković Jagoda, Kos Blaženka. The effect of <em>L. fermentum</em> MC1 and its exopolysaccharides on the gut microbiome and immune system of mice with induced colitis. Dani doktorata biotehničkog područja, Zagreb, Hrvatska, 12. &#8211; 13.09.2024. (postersko priopćenje)</li>
+<li>Butorac, Katarina, Banić, Martina, Čuljak, Nina, Leboš Pavunc, Andreja, Novak, Jasna, Šušković, Jagoda, Vidaković, Silvija, Kos, Blaženka. Proizvodnja fermentiranih probiotičkih pripravaka primjenom nusproizvoda mliječne industrije. 45. međunarodni simpozij mljekarskih stručnjaka, Rovinj, Hrvatska, 13. &#8211; 16.11.2024. (postersko priopćenje)</li>
+<li>Novak, Jasna, Leboš Pavunc, Andreja, Banić, Martina, Butorac, Katarina, Čuljak, Nina, Šušković, Jagoda, Kos, Blaženka. Redefining the gut microbiome through biomodulators. 9th International Congress of Nutritionists Zagreb, Hrvatska, 21. &#8211; 23.11.2024. (plenarno predavanje)</li>
+<li>Leboš Pavunc, Andreja, Čuljak, Nina, Butorac, Katarina, Banić, Martina, Novak, Jasna, Šušković, Jagoda, Kos, Blaženka. Use of by-products in the production of new generation encapsulated probiotics. Međunarodni kongres Natural Resources, Green Technology, and Sustainable Development/5-GREEN202, Zagreb, Hrvatska, 03. &#8211; 05.12.2024. (pozvano predavanje)</li>
+<li>Banić, Martina, Butorac, Katarina, Čuljak, Nina, Butorac, Ana, Novak, Jasna, Leboš Pavunc, Andreja, Rušanac, Anamarija, Stanečić Željka, Šušković, Jagoda, Kos, Blaženka. A combined high-throughput peptidome profiling and in silico analysis of the lyophilised functional fermented milk product. 18th International Scientific Conference on Probiotics, Prebiotics, Gut Microbiota and Health &#8211; IPC2025, Atena, Grčka, 24. &#8211; 26.06.2025. (postersko priopćenje)</li>
+<li>Novak, Jasna, Leboš Pavunc, Andreja, Banić, Martina, Butorac, Katarina, Šušković, Jagoda, Kos, Blaženka. Pre, pro i post-biotici – ključne bioaktivne komponente funkcionalne hrane za crijevni mikrobiom. 17. Stručni skup Funkcionalna hrana u Hrvatskoj, Zagreb, Hrvatska, 9.7.2025. (usmeno priopćenje)</li>
+<li>Čuljak, Nina, Leboš Pavunc, Andreja, Banić, Martina, Butorac, Katarina, Novak, Jasna, Šušković, Jagoda, Kos, Blaženka. Potencijalne terapijske biomolekule probiotika kao živih lijekova. Dani doktorata biotehničkog područja 2025, Zagreb, Hrvatska, 11. &#8211; 12.09.2025. (postersko priopćenje)</li>
+<li>Butorac, Katarina, Banić, Martina, Leboš Pavunc, Andreja, Novak, Jasna, Šušković, Jagoda, Kos, Blaženka. Funkcionalnost i biotehnološki potencijal probiotičkih sojeva mikrobioma majčinog mlijeka. Dani doktorata biotehničkog područja 2025, Zagreb, Hrvatska 11. &#8211; 12.09.2025. (postersko priopćenje)</li>
+<li>Leboš Pavunc, Andreja, Banić, Martina, Butorac, Katarina, Grgić, Tomislava, Čuljak, Nina, Novak, Jasna, Nejašmić, Diana, Zovko, Ljiljana, Tonković, Katarina, Šušković, Jagoda, Kos, Blaženka. Comparative volatile profile analysis of fermented milk beverages developed using autochthonous and commercial starter cultures. 15<sup>th</sup> International Scientific and Professional Conference WITH FOOD TO HEALTH, Osijek, Hrvatska, 17. &#8211; 18.9.2025. (postersko priopćenje)</li>
+<li>Banić, Matina, Čuljak, Nina, Bendelja, Krešo, Leboš Pavunc, Andreja, Butorac, Katarina, Savić-Mlakar, Ana, Cvetić, Željko, Novak, Jasna, Šušković, Jagoda, Kos, Blaženka. Unlocking the probiotic potential of Levilactobacillus brevis: the pivotal role of S-layer in immunomodulation and barrier reinforcement. 11<sup>th</sup> Beneficial Microbes Conference, Amsterdam, Nizozemska, 3.-5.11.2025. (postersko priopćenje)</li>
+<li>Leboš Pavunc, A., Butorac, K., Banić, M., Novak, J., Šušković, J., Kos, B. Microbiome profiling of autochthonous lactic acid bacteria isolated from donkey milk. 11<sup>th</sup> International Congress of Food Technologists, Biotechnologists and Nutritionists, Zagreb, Hrvatska, 9. -11.12.2025. (postersko priopćenje)</li>
+</ul>
+<p>&nbsp;</p>
+			</div></details><ol class="list"><li>Kristina Dučkić, Martina Banić, Ksenija Durgo, Ana Huđek Turković, Katarina Butorac, Andreja Leboš-Pavunc, Jasna Novak, Jagoda Šušković, Blaženka Kos, Funkcionalna karakterizacija autohtonih sojeva bakterija mliječne kiseline i njihovih bioaktivnih metabolita, poster izlaganje na Danima doktorata biotehničkog područja 2026, Zagreb. Zbornik sažetaka str. 70-71. (postersko priopćenje)</li><li>Martina Banić, Kristina Dučkić, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac, Jagoda Šušković, Blaženka Kos, From Formulation to Functionality: Comparative Insights into Postbiotic Preparation and Bioactivity, poster izlaganje 8th Croatian Congress of Microbiology with International Participation, Trakošćan, Hrvatska, 22.–25. rujna 2026., Book of Abstracts (postersko priopćenje)</li><li>Blaženka Kos, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac: Kružno gospodarstvo u mljekarskom sektoru - razvoj novih biotehnoloških procesa/Circular economy in dairy sector - new biotechnological processes development, International Dairy Experts Symposium, Rovinj, 25.- 28.11. 2026. (plenarno predavanje)</li><li>Martina Banić, Ana Butorac, Maja Zečević, Silvija Vidaković, Andreja Leboš Pavunc, Katarina Butorac, Jasna Novak, Jagoda Šušković, Blaženka Kos: Bioactive peptides - valuable functional compounds in dairy industry by-products, poster presentation, International Dairy Experts Symposium, Rovinj, 25.- 28.11. 2026. (postersko priopćenje)</li><li>Jasna Novak, Martina Banić, Andreja Leboš Pavunc, Ksenija Durgo, Ana Huđek Turković, Katarina Butorac, Jagoda Šušković, Blaženka Kos, Exopolysaccharides synthesised by beneficial Lactobacillus strains autochthonous to brine ecosystems, postersko priopćenje na radionici „2nd EPNOE (European Polysaccharide Network of Excellence) Workshop on Analytics of Polysaccharides, Napulj, Italija, 2-3 srpnja 2026. (postersko priopćenje)</li><li>Leboš Pavunc, Andreja; Banić, Martina; Butorac, Katarina; Novak, Jasna; Dučkić, Kristina; Šušković, Jagoda; Kos, Blaženka, Mikroorganizmi na putovanju: od domaće zimnice do egzotičnih fermentiranih specijaliteta, 18. Stručni skup Funkcionalna hrana u Hrvatskoj, Zagreb, 08.07.2026. (pozvano predavanje)</li></ol></div><div><h3>Radionice, mediji i priznanja</h3><details class="archive"><summary>Prethodne radionice i medijske aktivnosti</summary><div class="archive-content">
+		<ul>
+<li>Martina Banić, Katarina Zorić, Probiotičke bakterije &#8211; prijateljsko lice industrijske mikrobiologije, Dani otvorenih vrata Prehrambeno-biotehnološkog fakulteta, Sveučilišta u Zagrebu pod organizacijom udruge &#8220;PROBION&#8221; u sklopu 14. Festivala znanosti, 23. travnja 2016.</li>
+<li>Martina Banić, Katarina Zorić, Industrijska primjena bakterija mliječne kiseline kao probiotika za naše zdravlje, Dani otvorenih vrata Prehrambeno-biotehnološkog fakulteta, Sveučilišta u Zagrebu pod organizacijom udruge &#8220;PROBION&#8221;,  21. travnja 2017.</li>
+<li>Blaženka Kos, Gostovanje u TV emisiji „Zagrebe, dobro jutro&#8221; na televiziji Z1 povodom dobivene  Srebrne medalje na AgroARCA &#8211; 9. međunarodnom sajmu inovacija u poljoprivredi, prehrambenoj industriji i poljoprivrednoj mehanizaciji 02.11.2017.</li>
+<li> Blaženka Kos, gostovanje u  TV emisiji „Sveučilišni Zagreb&#8221; – predstavljanje projekta HRZZ-a u okviru kojeg su postignuti rezultati za dobivenu Srebrnu medalju na AgroARCA &#8211; 9. međunarodnom sajmu inovacija u poljoprivredi, prehrambenoj industriji i poljoprivrednoj mehanizaciji 6.11.2017.</li>
+<li>Martina Banić, Katarina Zorić, &#8220;Bakterije mliječne kiseline-mikrotvornice koje vladaju svijetom&#8221;,  Dani otvorenih vrata Prehrambeno-biotehnološkog fakulteta, Sveučilišta u Zagrebu pod organizacijom udruge &#8220;PROBION&#8221;, 14. lipanj 2018</li>
+<li>Andreja Leboš Pavunc, Jasna Novak, Bakterije koje rade kao na baterije, Ljetna tvornica znanosti, 30.07.-05.08.2018., Medils, Split.</li>
+<li>Blaženka Kos, gostovanje u TV emisiji „Znanstveni krugovi“ na HRT 1 &#8211; predstavljanje projekta HRZZ-a povodom dobivanja Državne nagrade za znanost za 2017. godinu, 30.10.2018.</li>
+<li>Jasna Novak, Good, old lactic acid bacteria – The invisibles who work for us, Znanstveni kvart –Znanstvenik fora ili noćna mora, INTERLIBER 2018; Program za škole, Interaktivni program za British International School of Zagreb, 17. studenog 2018.</li>
+<li>Blaženka Kos, U društvu dobrih bakterija-kako one utječu na zdravlje,  tri radionice u osnovnoj školi Trnjanska, 12. studenog 2018. (za učenike četvrtog razreda), 19. studenog 2018. (za nastavnike), 26. studenog 2018. (za učenike trećeg razreda), Zagreb.</li>
+<li>Jagoda Šušković, Moć mikroorganizama u proizvodnji antibiotika i kontinuiranoj borbi protiv antibiotičke rezistencije &#8211; Prigodno predavanje povodom 10-te godišnjice Europskog dana svjesnosti o antibioticima (18.11.2008.-18.11.2018) i Svjetskog tjedna svjesnosti o antibioticima (12.11.-18.11.2018.), Pozvano predavanje u organizaciji Društva inženjera kemije i tehnologije Požega, 03.12.2018., Veleučilište u Požegi</li>
+<li>Blaženka Kos, Autohtoni sojevi bakterija mliječne kiseline iz tradicionalnih fermentiranih proizvoda kao probiotičke bakterije i potencijalni „živi lijekovi<em>&#8220;</em> &#8211; Prigodno predavanje povodom 10-te godišnjice Europskog dana svjesnosti o antibioticima (18.11.2008.-18.11.2018) i Svjetskog tjedna svjesnosti o antibioticima (12.11.-18.11.2018.), Pozvano predavanje u organizaciji Društva inženjera kemije i tehnologije Požega, 03.12.2018., Veleučilište u Požegi</li>
+<li>Blaženka Kos, Državna nagrada za znanost za 2017. godinu, za primjenu rezultata znanstvenoistraživačkog rada u znanstvenom području 4. Biotehničke znanosti, znanstvenom polju 4.04. Biotehnologija, grana 4.04.03 Inženjerstvo (za biotehnološku proizvodnju probiotika i funkcionalnih starter kultura tehnologijom koja omogućava povećanje otpornosti bakterijskih stanica na stres tijekom procesiranja i skladištenja i zaštitni učinak mikroinkapsulacijskih materijala i lioprotektora, kao i za razvoj novih probiotičkih proizvoda na temelju rezultata istraživanja provedenih u okviru probiotičkog koncepta), 2018.</li>
+<li>Blaženka Kos, Godišnja nagrada “Rikard Podhorsky” Akademije tehničkih znanosti Hrvatske za 2018. godinu, u znak priznanja istaknutoj znanstvenici za naročito vrijedno znanstveno i stručno dostignuće koje ima primjenu i koje je unaprijedilo suradnju s gospodarstvom te za istaknuti doprinos radu Akademije i njezinoj afirmaciji u svijetu tijekom proteklih pet godina, 20. svibnja 2019.</li>
+<li>Martina Banić, predstavljanje teme disertacije „Potencijalne terapijske biomolekule probiotičkih sojeva autohtonih bakterija mliječne kiseline“ na „Danu doktorata biotehničkog područja“ , Šumarski fakultet, Zagreb, 16.10.2020.</li>
+<li>Martina Banić, Katarina Butorac, sudjelovanje na predavanju “Science and Entrepreneurship: When Scientists get down to Business“, Bicro BIOCentar, Zagreb, 17.12.2019.</li>
+<li>Martina Banić, Katarina Butorac, sudjelovanje na radionici „Winter School of Research Commercialization“, Farmaceutsko-biokemijski fakultet, Zagreb, 28.-30.11.2019.</li>
+<li>Blaženka Kos, gostujuća predavanja održana na diplomskom studiju „Molecular and Industrial Biotechnology“ i doktorskom studiju „Life Sciences and Biotechnology“  na University of Insubria, Varese, Italy (Dipartimento di Biotecnologie e Scienze della Vita), tijekom ERASMUS + studijskog boravaka. Teme predavanja održanih 09. i 10. 12. 2019.: „Probiotics as living drugs – impact on microbiota“; „S-layer proteins and bacteriocins production by lac-tic acid bacteria“; „Gut microbiota and health“; „Probiotic strains with improved potential to target gastrointestinal disorders“.</li>
+<li>Jasna Novak, gostujuća predavanja održana na diplomskom studiju „Molecular and Industrial Biotechnology“ i doktorskom studiju „Life Sciences and Biotechnology“  na University of Insubria, Varese, Italy (Dipartimento di Biotecnologie e Scienze della Vita), tijekom ERASMUS + studijskog boravaka. Teme predavanja održanih 09. i 10. 12. 2019.: „Bacteriocins as alternate antimicrobial strategy to prevent the development of antibiotic resistance“; „Probiotic functional biomolecules“; „Intestinal microbiota composition and their metabolic activity“;  „Application of proteomics and other molecular methodologies to resolve probiotic mode of action“</li>
+<li>Pregledni rad u Godišnjaku 2019 Akademije tehničkih znanosti Hrvatske, koji je predstavljen na Godišnjoj skupštini HATZ-a 2020. godine: Šušković, J.,  Kos, B., Šantek, B., Kniewald, Z.,  Mrša, V., Hruškar, M., Frece, J., Gaurina Srček, V.,  Slavica, A., Novak, J., Leboš Pavunc, A. (2020): Biotehnologija u Hrvatskoj – povijesna baština i suvremeni trendovi, V. Andročec (Ured.), Akademija tehničkih znanosti Hrvatske, Zagreb, str. 438-484. <a href="https://www.hatz.hr/wp-content/uploads/2020/05/Godisnjak-HATZ-2020-za-web.pdf" target="_blank">https://www.hatz.hr/wp-content/uploads/2020/05/Godisnjak-HATZ-2020-za-web.pdf</a></li>
+<li>Blaženka Kos, gostujuće predavanje održano on-line na radionici &#8211; seminaru „Application of Recombinant DNA Technology in Biotechnology” za studente preddiplomskih studija iz biotehničkih znanosti, prirodnih znanosti i područja biomedicine i zdravstva na Sveučilištu Josip Juraj Strossmayer u Osijeku, 28.09.- 2.10. 2020. Naslov predavanja „Biotehnološka proizvodnja farmaceutika“.</li>
+<li>Martina Banić, Blaženka Kos, Jurica Žučko, Jagoda Šušković, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac. Potencijalne terapijske biomolekule probiotičkih sojeva autohtonih bakterija mliječne kiseline. Predavanje održano na skupu „Dan doktorata biotehničkog područja“, Šumarski fakultet Sveučilišta u Zagrebu, Hrvatska, 16.10.2020.</li>
+<li>Blaženka Kos, gostujuća predavanja održana na diplomskom studiju „Molecular and Industrial Biotechnology“ na University of Insubria, Varese, Italy (Dipartimento di Biotecnologie e Scienze della Vita), tijekom ERASMUS + studijskog boravaka. Tema predavanja održanog 16.11.2020.: Live biotherapeutic products-impact on gut microbiota.</li>
+<li>Jasna Novak, gostujuća predavanja održana na diplomskom studiju „Molecular and Industrial Biotechnology“ na University of Insubria, Varese, Italy (Dipartimento di Biotecnologie e Scienze della Vita), tijekom ERASMUS + studijskog boravaka. Tema predavanja održanog 16.11.2020.:  Trigger molecules of live biotherapeutic products.</li>
+<li>Andreja Leboš Pavunc. U društvu mikroba. Smotra Sveučilišta u Zagrebu, 19-21.11.2020.</li>
+<li>Nina Čuljak, Martina Banić, sudjelovanje na radionici „Winter School of Research Commercialization-Winter Shool Week“, Farmaceutsko-biokemijski fakultet, Zagreb, 24.-28.11.2020.</li>
+<li>Martina Banić, Nina Čuljak. Sudjelovanje na stručnoj radionici u organizaciji Illumina-e: „Epigenetics &#8211; the full picture“. Zoom platforma, 12.-16.04.2021.</li>
+<li>Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Organizacija radionice na temu „Mikrići su mikrotvornice za megapriozvode“, Festival znanosti (10.-15.05.2021.), Zagreb, Hrvatska, 12.05.2021.</li>
+<li>Blaženka Kos, Dysbiosis of gut microbiota &#8211; intervention with probiotics, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 17.05.2021.</li>
+<li>Jasna Novak, Probiotics as live biotherapeutics for intestinal ecosystem, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 17.05.2021.</li>
+<li>Nina Čuljak. International Applied Microbiology Online Conference. Society for Applied Microbiology, Zoom platforma, 07.-11.07.2021.</li>
+<li>Nina Čuljak, sudjelovanje na radionici „Tekućinska kromatografija i spektrometrija masa“. BICRO BIOCentar, Zagreb, Hrvatska, 12.-13.10.2021.</li>
+<li>Andreja Leboš Pavunc. Sudjelovanje na seminaru „Uvod u upravljanje projektima“, BICRO BIOCentar, Zagreb, Hrvatska, 26.10.2021.</li>
+<li>Jasna Novak, Andreja Leboš Pavunc. Sudjelovanje na „Nacionalni informativni dan za Klaster 6 – Hrana, biogospodarstvo, prirodni resursi, poljoprivreda i okoliš“, Zoom platforma, 16.11.2021.</li>
+<li>Nina Čuljak, sudjelovanje na webinaru „Can an mutual solution be found for probiotics in Europe?“, International Probiotics Association (IPA) Europe, Zoom platforma, 04.04.2022.</li>
+<li>Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac, Nina Čuljak. Bakterije mliječne kiseline u biotehnologiji. Dan otvorenih vrata Prehrambeno-biotehnološkog fakulteta, Sveučilišta u Zagrebu, Hrvatska, 24.04.2022. (radionica)</li>
+<li>Jasna Novak. Probiotici za intestinalni mikrobiom. Dan otvorenih vrata Prehrambeno-biotehnološkog fakulteta Sveučilišta u Zagrebu, Hrvatska, 24.04.2022. (predavanje)</li>
+<li>Andreja Leboš Pavunc, Katarina Butorac, Nina Čuljak. Bakterioljupci kod Ivane Brlić Mažuranić. Tjedan znanosti, Zagreb, Hrvatska, 02.05.2022. (radionica)</li>
+<li>Blaženka Kos, Dysbiosis of gut microbiota &#8211; intervention with probiotics, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 06.05.2022.</li>
+<li>Jasna Novak, Probiotics for intestinal microbiome, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje,  06.05.2022.</li>
+<li>Andreja Leboš Pavunc, Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 06.05.2022.</li>
+<li>Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Bakterije i kvasci – prijateljske mikrotvornice. Festival znanosti 02.-07.05.2022., Zagreb, Hrvatska, 04.05.2022. (radionica)</li>
+<li>Andreja Leboš Pavunc, Katarina Butorac, Nina Čuljak. Panda među mikrobima. Zagreb, Hrvatska, 15.02. i 08.03.2023. (radionica)</li>
+<li>Nina Čuljak. Epigenetics &#8211; the full picture 2023. Zoom platforma, 17.-20.04.2023. (webinar)</li>
+<li>Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Čarobni svijet probiotika. Festival znanosti 24.-29.04.2023., Zagreb, Hrvatska, 24.04.2023. (radionica)</li>
+<li>Nina Čuljak. Implementacija PCR metode u svakodnevnom radu mikrobiološkog laboratorija. Hotel Esplanada, 25.04.2023. (stručni seminar)</li>
+<li>Nina Čuljak, Katarina Butorac, Dobra laboratorijska praksa – siguran i kvalitetan rad u laboratoriju, BICRO BIOCentar, Zagreb, Hrvatska, 27.-28.04.2023. (stručna radionica)</li>
+<li>Blaženka Kos, Dysbiosis of gut microbiota &#8211; intervention with probiotics, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 23.05.2023.</li>
+<li>Jasna Novak, Probiotics for intestinal microbiome, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 05.2023.</li>
+<li>Andreja Leboš Pavunc, Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 23.05.2023.</li>
+<li>Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak, Slatko, kiselo i pijano, International Microorganisms Day, Prehrambeno-biotehnološki fakultet, Zagreb, Hrvatska, radionica, 16.09.2023.</li>
+<li>Jasna Novak, Crijevna mikrobiota – naši skriveni mikroprijatelji, International Microorganisms Day, Prehrambeno-biotehnološki fakultet, Zagreb, Hrvatska, predavanje, 16.09.2023.</li>
+<li>Jasna Novak, Andreja Leboš Pavunc. Upravljenje projektima. BICRO BIOCentar, Zagreb, Hrvatska, 25.10.2023. (radionica)</li>
+<li>Blaženka Kos. Human microbiota and health – intervention with probiotics and prebiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 24.11.2023.</li>
+<li>Jasna Novak. Next-generation probiotics/postbiotics for gut microbiota, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 24.11.2023.</li>
+<li>Andreja Leboš Pavunc. Lyophilisation and encapsulation of next generation probiotics and postbiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 24.11.2023.</li>
+<li>Andreja Leboš Pavunc. Pristup financiranju, BICRO BIOCentar, Zagreb, Hrvatska, 01.12.2023. (radionica)</li>
+<li>Martina Banić, Katarina Butorac. Zaštita intelektualnog vlasništva, BICRO BIOCentar, Zagreb, Hrvatska, 05.12.2023. (radionica)</li>
+<li>Jasna Novak. Probiotics an important actors in microbial biotechnology, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje,  05.12.2023.</li>
+<li>Andreja Leboš Pavunc. Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 05.12.2023.</li>
+<li>Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak. Kiselo i mjehurićasto – mikrobi se tu negdje skrivaju. Projektna nastava za darovitu djecu PANDA7, Zagreb, Hrvatska, 08.02.2024. (radionica)</li>
+<li>Katarina Butorac, Andreja Leboš Pavunc, Martina Banić, Nina Čuljak, Jasna Novak, Blaženka Kos. Igra skrivača s mikrobima. 3. MUZZA tjedan znanosti, 12.-14.04.2024., Zagreb, Hrvatska, 13.04.2024. (radionica)</li>
+<li>Martina Banić, Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Katarina Butorac, Nina Čuljak. Mikrići čudotvorci – velika uloga malih organizama. Festival znanosti 24.-29.04.2023., Zagreb, Hrvatska, 24.04.2024. (radionica)</li>
+<li>Andreja Leboš Pavunc, Jasna Novak, Nina Čuljak, Martina Banić, Katarina Butovac, Nina Čuljak, Iva Čanak, Kristina Dučkić, Maja Zečević. Korisni mikrobi u hrani. International Microorganisms Day, 21.09.2024., park Maksimir, Zagreb, Hrvatska.</li>
+<li>Blaženka Kos. Human microbiota and health – intervention with probiotics and prebiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 29.11.2024.</li>
+<li>Andreja Leboš Pavunc. Biotechnological production of probiotics and postbiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 29.11.2024.</li>
+<li>Blaženka Kos. Intervention with next-generation probiotics on disbalanced gut microbiota, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 06.12.2024.</li>
+<li>Andreja Leboš Pavunc. Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 06.12.2024.</li>
+<li>Andreja Leboš Pavunc, Jasna Novak, Nina Čuljak, Martina Banić, Katarina Butovac, Iva Čanak, Kristina Dučkić, Maja Zečević, radionica: Pronađi mikrobe u fermentiranoj hrani“ u okviru treme: „Šetnja s mikrobima“,  International Microorganisms Day, 21. rujna 2024. Maksimir, Zagreb.</li>
+<li>Jasna Novak. The concept of probiotics and postbiotics &#8211; microbial-based strategies to modulate the gut microbiome (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 29.11.2024.</li>
+<li>Blaženka Kos. Intervention with next-generation probiotics on disbalanced gut microbiota, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 06.12.2024.</li>
+<li>Jasna Novak. Pro-/Post-biotics an important actors in microbial biotechnology, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje,  06.12.2024.</li>
+<li>Blaženka Kos, Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Nina Čuljak, Jagoda Šušković (2024): Poglavlje 1: Proizvodnja i inkapsulacija sljedeće generacije probiotika i njihovih bioaktivnih molekula primjenom nusproizvoda prehrambene industrije. U: Neke mogućnosti iskorištenja nusproizvoda prehrambene industrije, Knjiga 5. Ured. D. Šubarić. M. Jašić, S. Jokić) monografija, Sveučilište Josipa Jurja Strossmayera u Osijeku Prehrambeno-tehnološki fakultet Osijek.</li>
+<li>Jasna Novak i Andreja Leboš Pavunc: „Pustolovina u probavilu: put od zalogaja do energije“, MUZZA Tjedan znanosti na Sveučilištu u Zagrebu, 10. do 13. travnja 2025.</li>
+<li>Martina Banić, Katarina Butorac, Andreja Leboš Pavunc, Jasna Novak, Blaženka Kos, radionica &#8220;Supermoći nevidljivih mikrića&#8221;, Festival znanosti, Sveučilište u Zagrebu, 7. svibnja 2025.</li>
+<li>Jasna Novak, Andreja Leboš Pavunc, Nina Čuljak, Iva Čanak, Kristina Dučkić, Deni Pehnec, Ivana Repić, radionica: Pronađi mikrobe u fermentiranoj hrani“ u okviru treme: „Šetnja s mikrobima“,  International Microorganisms Day, Međunarodni dan mikroorganizama, Maksimir, Zagreb, 20.9.2025.</li>
+<li>Nagrada <em>Praemium Biotechnicum,</em> za ostvarene znanstvene rezultate, promicanje biotehničkih disciplina i struke te izniman doprinos u prijenosu znanja i odgoju mladih znanstvenika i stručnjaka u području biotehničkih znanosti, za dr. sc. Blaženku Kos.</li>
+<li>Blaženka Kos. Human microbiota and health – intervention with probiotics, prebiotics and postbiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 04.12.2025.</li>
+<li>Jasna Novak. Biotics for a Healthy Gut Microbiome (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 04.12.2025.</li>
+<li>Andreja Leboš Pavunc. Biotechnological production of probiotics and postbiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 04.12.2025.</li>
+<li>Blaženka Kos. Intervention with next-generation probiotics and postbiotics on disbalanced gut microbiota, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 05.12.2025.</li>
+<li>Jasna Novak. Pro-/Post-biotics an important actors in microbial biotechnology, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje,  05.12.2025.</li>
+<li>Andreja Leboš Pavunc. Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 05.12.2025.</li>
+</ul>
+			</div></details><ol class="list"><li>Andreja Leboš Pavunc, Nagrada za najbolji poster na kongresu „11th International Congress of Food Technologists, Biotechnologists and Nutritionists“, Zagreb, 9.12. – 11.12.2025.</li><li>Jasna Novak, Andreja Leboš Pavunc, Supermoći nevidljivih mikrića. MUZZA Tjedan znanosti na Sveučilištu u Zagrebu, 9.-12.4.2026.</li><li>Andreja Leboš Pavunc i Jasna Novak, Mikrobi u kućanstvu i medicini: Istraživanje uloge korisnih mikroba u svakodnevnoj proizvodnji hrane (poput fermentacije) te učenje o tome kako znanstvenici proizvode antibiotike. „Šetnja s mikrobima 2026.“ povodom Međunarodnog dana mikroorganizama u Parku Maksimir u Zagrebu, 19. rujna 2026.</li><li>Radović, M., Kos, B., Leboš Pavunc, A., Novak, J., Butorac, K., Banić, M., Superheroji – velike moći malih mikroorganizama (radionica), Festival znanosti, Sveučilište u Zagrebu, 20. - 25. travnja 2026.</li><li>Blaženka Kos, nagrada ”Supra-voditelj” za najbolje ocijenjene HRZZ projekte  povodom obilježavanja 25. obljetnice rada Hrvatske zaklade za znanost, 2026.</li><li>Blaženka Kos, Rektorovo priznanje dodijeljeno Odboru za upravljanje kvalitetom Sveučilišta u Zagrebu i njegovim radnim skupinama, za značajan doprinos razvoju, provedbi i unaprjeđenju sustava osiguravanja kvalitete na Sveučilištu u Zagrebu tijekom protekle četiri akademske godine, 9. studenoga 2026.</li><li>Martina Banić, nagrada Sveučičišta u Zagrebu Prehrambeno-biotehnološkog fakulteta za uspješnog mladog znanstvenika, 25. ožujka 2026.</li><li>Jasna Novak, Andreja Leboš Pavunc, Martina Banić, Katarina Butorac, Jurica Žučko, Antonio Starčević, Ksenija Durgo, Jagoda Šušković, Blaženka Kos; The biostrategies for modulation of gut microbiota, Seminar, pozvano predavanje,  University of Naples Fedrico II, Napulj , Italija.</li><li>Blaženka Kos. Human microbiota and health – intervention with probiotics, prebiotics and postbiotics na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 03.12.2026.</li><li>Jasna Novak. Biotics for a Healthy Gut Microbiome (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 03.12.2026.</li><li>Andreja Leboš Pavunc. Biotechnological production of probiotics and postbiotics, na predmetu „Nutraceuticals production/application“ (nositelj: dr. sc. Francesca Berini, University of Insubria), on-line predavanje, 03.12.2026.</li><li>Blaženka Kos. Intervention with next-generation probiotics and postbiotics on disbalanced gut microbiota, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 04.12.2026.</li><li>Jasna Novak. Pro-/Post-biotics an important actors in microbial biotechnology, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje,  04.12.2026.</li><li>Andreja Leboš Pavunc. Microencapsulation and lyophilization of probiotics as live biotherapeutic products, Blue Economy and Growth, EU-CONEXUS Minor programmes, na predmetu „Introduction to Microbial Biotechnology“ (nositelj: prof. dr. sc. Slaven Zjalić, Sveučilište u Zadru), on-line predavanje, 04.12.2026.</li></ol><details class="archive"><summary>Medijske objave rezultata projekta</summary><div class="archive-content">
+		<h5 class="title style-scope ytd-video-primary-info-renderer"><a href="https://youtu.be/iHppCkBpa88" target="_blank">Gostovanje Prof dr sc Blaženke Kos u emisiji Sveučilišni Zagreb 1 dio</a></h5>
+<h5 class="title style-scope ytd-video-primary-info-renderer"><a href="https://youtu.be/U9KEJBM4vpo" target="_blank">Gostovanje Prof dr sc Blaženke Kos u emisiji Sveučilišni Zagreb 2 dio</a></h5>
+<h5><a href="https://www.youtube.com/watch?v=tVE9LlRJ5Xc&amp;list=PLl9PwpP0j5AtV4x90l-Unv7k_nC3hY_he&amp;index=1" target="_blank">Gostovanje Prof. dr. sc. Blaženke Kos u emisiji Dobro jutro, Zagrebe</a></h5>
+<h5><a href="https://www.youtube.com/watch?v=hWz4C2CtaJE&amp;feature=youtu.be" target="_blank">Gostovanje Prof. dr. sc. Blaženke Kos u emisiji &#8220;Znanstveni krugovi&#8221;</a></h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h5></h5>
+			</div></details></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div><strong>POST-BIO</strong><p>Probiotici, postbiotici i biotehnologija.</p><p><a href="http://www.pbf.unizg.hr/zavodi/zavod_za_biokemijsko_inzenjerstvo/laboratorij_za_tehnologiju_antibiotika_enzima_probiotika_i_starter_kultura/blazenka_kos">Voditeljica projekta</a> · <a href="http://bib.irb.hr/lista-radova?autor=195565&amp;chset=ASCII&amp;lang=EN">Publikacije voditeljice</a></p></div><div><p>Sveučilište u Zagrebu<br>Prehrambeno-biotehnološki fakultet</p><p><a href="#pocetna">Na vrh ↑</a></p></div></div></footer>
+<script>
+  document.querySelectorAll('[data-table-search]').forEach(function (input) {
+    var table = document.getElementById(input.dataset.tableSearch);
+    var status = document.getElementById(input.getAttribute('aria-describedby'));
+    var rows = Array.from(table.querySelectorAll('tbody tr'));
+    input.addEventListener('input', function () {
+      var query = input.value.trim().toLocaleLowerCase('hr');
+      var shown = 0;
+      rows.forEach(function (row) {
+        var matches = row.textContent.toLocaleLowerCase('hr').includes(query);
+        row.hidden = !matches;
+        if (matches) shown++;
+      });
+      status.textContent = 'Prikazano ' + shown + ' od ' + rows.length + ' redaka.';
+    });
+  });
+</script>
+</body>
+</html>
